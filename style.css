@@ -171,7 +171,7 @@ nav {
 }
 
 .sub-desc {
-  color: #5f6d76;
+  color: black;
   max-width: 520px;
   margin-bottom: 25px;
 }
@@ -219,7 +219,7 @@ nav {
 .benefits-list li {
   margin-bottom: 12px;
   font-weight: 600;
-  color: #5f6d76;
+  color: black;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -844,6 +844,12 @@ body{
   .kb-card { padding: 20px; }
   .kb-card-title { margin-top: 50px; }
   .kb-title { font-size: 32px; }
+  .kb-section{
+    margin-top: 230px;
+  }
+  .kb-grid{
+  display: flow;
+  }
 }
 
 /* Small mobile tweaks */
