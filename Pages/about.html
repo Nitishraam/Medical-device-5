@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./about.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+      <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="../index.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a style="color: #1bc900" href="./about.html">About</a></li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="../index.html" style="display: flex; align-items: center">
+            <img src="../images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a style="color: #1bc900" href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="top-about">
+      <img class="top-img" src="../images/thumb-350-1330529.webp" alt="" />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>ABOUT</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>About</span></span>
+        </p>
+      </div>
+    </div>
+
+
+  <main class="hero-section">
+    <div class="hero-inner">
+
+      <!-- Left artwork / image -->
+      <div class="art-col" aria-hidden="false">
+        <!-- <div class="rings">
+          <div class="ring ring-red"></div>
+          <div class="ring ring-yellow"></div>
+          <div class="ring ring-blue"></div>
+        </div> -->
+
+        <div data-aos="zoom-in" class="photo-wrap">
+          <!-- uploaded image path used here -->
+          <img src="../Images/a1.webp" alt="Healthcare professional" class="photo">
+        </div>
+
+        <div  data-aos="zoom-out" class="badge">
+          <div class="badge-number">25</div>
+          <div class="badge-text">Years of<br>experience</div>
+        </div>
+      </div>
+
+      <!-- Right text/content -->
+      <div class="content-col">
+        <h2 data-aos="fade-up" class="section-title">What Our Client’s Say</h2>
+        <p data-aos="fade-up" class="section-sub">Sed ut perspiciatis unde omnis iste natus error</p>
+
+        <ul class="features-list">
+          <li class="feature-item">
+            <span data-aos="fade-up" class="check">✔</span>
+            <div class="feature-body">
+              <h4 data-aos="fade-up" class="feature-title">Our Mission &amp; Vision</h4>
+              <p data-aos="fade-up" class="feature-desc">Quis autem vel eum iure reprehenderit quin voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem eum.</p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <span data-aos="fade-up" class="check">✔</span>
+            <div data-aos="fade-up" class="feature-body">
+              <h4 class="feature-title">Treatment For Covid -19</h4>
+              <p class="feature-desc">But I must explain to you how all this mistaken idea denouncing pleasure and praising pain was born and complete account.</p>
+            </div>
+          </li>
+        </ul>
+
+        <a data-aos="fade-up" class="cta-btn" href="./contact.html">MEET WITH DOCTORS <span class="plus">+</span></a>
+      </div>
+    </div>
+  </main>
+
+
+  <section class="section">
+    <div class="wrap">
+      <div class="head">
+        <div data-aos="fade-up" class="kicker">Why Choose Us</div>
+        <h data-aos="fade-up" class="title">Maximize Care Quality with<br>Trusted Medical Solutions</h>
+        <p data-aos="fade-up" class="desc">Discover the key advantages of choosing our advanced, reliable, and fully supported medical equipment services.</p>
+      </div>
+
+      <div data-aos="fade-up" class="left" aria-live="polite">
+        <div class="accordion" id="acc">
+
+          <div class="item" data-index="0">
+            <div class="item-header" role="button" aria-controls="panel-0" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Certified Medical-Grade Equipment</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-0" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-0" class="panel" role="region" aria-hidden="true">
+              <p>We supply internationally certified equipment that meets strict safety and performance standards, ensuring reliability and patient safety in clinical environments.</p>
+            </div>
+          </div>
+
+          <div class="item open" data-index="1">
+            <div class="item-header" role="button" aria-controls="panel-1" aria-expanded="true" tabindex="0">
+              <h3 class="item-title">Experienced Technical Team</h3>
+              <button class="toggle-btn" aria-label="Collapse item" aria-controls="panel-1" aria-expanded="true">−</button>
+            </div>
+            <div id="panel-1" class="panel open" role="region" aria-hidden="false">
+              <p>All our medical devices are manufactured and tested to meet strict international standards, ensuring maximum safety, long-term durability, and precise performance for every healthcare application.</p>
+            </div>
+          </div>
+
+          <div class="item" data-index="2">
+            <div class="item-header" role="button" aria-controls="panel-2" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Tailored Healthcare Solutions</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-2" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-2" class="panel" role="region" aria-hidden="true">
+              <p>We work with each facility to deliver solutions tailored to workflows, budgets, and clinical requirements so equipment fits your practice rather than the other way around.</p>
+            </div>
+          </div>
+
+          <div class="item" data-index="3">
+            <div class="item-header" role="button" aria-controls="panel-3" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Fast & Responsive Service</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-3" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-3" class="panel" role="region" aria-hidden="true">
+              <p>Our certified technicians respond quickly with remote diagnostics and on-site repairs to minimize downtime and keep your critical systems running.</p>
+            </div>
+          </div>
+
+          <div class="item" data-index="4">
+            <div class="item-header" role="button" aria-controls="panel-4" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Long-Term Partnership Focus</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-4" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-4" class="panel" role="region" aria-hidden="true">
+              <p>We prioritize long-term relationships, offering training, preventive maintenance plans, and continuous support to maximize your equipment ROI.</p>
+            </div>
+          </div>
+
+          <div class="item" data-index="5">
+            <div class="item-header" role="button" aria-controls="panel-5" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Innovative and Up-to-Date Technology</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-5" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-5" class="panel" role="region" aria-hidden="true">
+              <p>We continually evaluate and adopt advancements so you benefit from modern, more reliable technologies that improve clinical outcomes.</p>
+            </div>
+          </div>
+
+          <div class="item" data-index="6">
+            <div class="item-header" role="button" aria-controls="panel-6" aria-expanded="false" tabindex="0">
+              <h3 class="item-title">Reliable Performance</h3>
+              <button class="toggle-btn" aria-label="Expand item" aria-controls="panel-6" aria-expanded="false">+</button>
+            </div>
+            <div id="panel-6" class="panel" role="region" aria-hidden="true">
+              <p>Robust quality control and field service ensure devices perform reliably day after day, securing continuity of care for patients and staff.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="hero" aria-hidden="true">
+          <!-- uploaded image path used here -->
+          <img  data-aos="zoom-in" src="../Images/a2.webp" alt="Medical equipment and technician">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Accessible accordion toggle logic
+    (function () {
+      const items = document.querySelectorAll('.item');
+
+      function closeItem(item) {
+        item.classList.remove('open');
+        const header = item.querySelector('.item-header');
+        const btn = header.querySelector('.toggle-btn');
+        const panel = item.querySelector('.panel');
+
+        header.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = '+';
+        panel.classList.remove('open');
+        panel.setAttribute('aria-hidden', 'true');
+      }
+
+      function openItem(item) {
+        item.classList.add('open');
+        const header = item.querySelector('.item-header');
+        const btn = header.querySelector('.toggle-btn');
+        const panel = item.querySelector('.panel');
+
+        header.setAttribute('aria-expanded', 'true');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = '−';
+        panel.classList.add('open');
+        panel.setAttribute('aria-hidden', 'false');
+      }
+
+      function toggleItem(item) {
+        if (item.classList.contains('open')) {
+          closeItem(item);
+        } else {
+          openItem(item);
+        }
+      }
+
+      items.forEach(item => {
+        const header = item.querySelector('.item-header');
+        const btn = header.querySelector('.toggle-btn');
+        const panel = item.querySelector('.panel');
+
+        // if item has class "open" on load, set attributes accordingly
+        if (item.classList.contains('open')) {
+          header.setAttribute('aria-expanded', 'true');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.textContent = '−';
+          panel.classList.add('open');
+          panel.setAttribute('aria-hidden', 'false');
+        } else {
+          header.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.textContent = '+';
+          panel.setAttribute('aria-hidden', 'true');
+        }
+
+        // click on header or button toggles
+        header.addEventListener('click', (e) => {
+          // ignore clicks that originate from text selection, etc.
+          toggleItem(item);
+        });
+
+        // Allow keyboard toggling with Enter or Space
+        header.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleItem(item);
+          }
+        });
+
+        // Prevent double-toggling when clicking the button inside header
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggleItem(item);
+        });
+      });
+    })();
+  </script>
+
+<div data-aos="zoom-in" class="container">
+    <!-- using user's uploaded file path as a decorative image -->
+    <!-- <img src="../Images/a1.webp" alt="decorative" class="hero-img" /> -->
+
+    <section class="stats-row" id="stats">
+      <div class="stat" data-target="2560" aria-hidden="false">
+        <div class="icon" aria-hidden="true">
+          <!-- heart outline -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">SATISFIED CLIENTS</div>
+      </div>
+
+      <div class="stat" data-target="9862">
+        <div class="icon" aria-hidden="true">
+          <!-- hands/prayer icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4l-4 6-4-6" />
+            <path d="M2 13s4 0 6 3 6 5 6 5 3-2 6-5 6-3 6-3" />
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">FINISHED WORKS</div>
+      </div>
+
+      <div class="stat" data-target="7563">
+        <div class="icon" aria-hidden="true">
+          <!-- group icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">COVID -19 SPECIALIST</div>
+      </div>
+
+      <div class="stat" data-target="6534">
+        <div class="icon" aria-hidden="true">
+          <!-- clock / history icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v6h6"/>
+            <path d="M21 12a9 9 0 1 1-9-9"/>
+            <path d="M12 7v6l4 2"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">GLOBAL BRANDS</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // animateCount: animates number from 0 to target using requestAnimationFrame
+    function animateCount(el, start, end, duration) {
+      const range = end - start;
+      const startTime = performance.now();
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutCubic(progress);
+        const current = Math.floor(start + (range * eased));
+        el.textContent = current.toLocaleString(); // format with commas
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = end.toLocaleString(); // ensure exact final value
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // When stats container becomes visible, run animations once
+    document.addEventListener('DOMContentLoaded', () => {
+      const stats = document.querySelectorAll('.stat');
+      const opts = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const item = entry.target;
+            // animate only once per item
+            if (!item.classList.contains('counted')) {
+              const target = parseInt(item.getAttribute('data-target') || '0', 10);
+              const display = item.querySelector('.count');
+              // small randomization of duration for a pleasant stagger effect
+              const duration = 1600 + (Math.random() * 600);
+              animateCount(display, 0, target, duration);
+              item.classList.add('counted');
+              // make visible (entrance)
+              item.classList.add('visible');
+            }
+            // if you want all stats to animate together when the container is visible,
+            // you could call obs.disconnect() here.
+          }
+        });
+      }, opts);
+
+      stats.forEach(s => observer.observe(s));
+
+      // also add a small reveal for items that are already visible (fallback)
+      stats.forEach(s => {
+        const rect = s.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0 && !s.classList.contains('visible')) {
+          s.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+
+<main class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        
+        <h1 data-aos="fade-up" class="hero-title">
+          Needs For<br>Consultations
+        </h1>
+
+        <p data-aos="fade-up" class="hero-sub">
+          Quick access to qualified specialists for timely diagnosis and effective treatment plans.
+        </p>
+
+        <div data-aos="fade-up" class="hero-ctas">
+          <a class="btn-primary" href="./contact.html" role="button">Contact Now <span class="plus">+</span></a>
+        </div>
+      </div>
+
+      <div data-aos="zoom-out" class="hero-right" aria-hidden="true">
+        <!-- using uploaded image path directly as requested -->
+        <img src="../Images/a3.webp" alt="Medical staff" class="hero-image">
+      </div>
+    </div>
+  </main>
+
+  <!-- <img src="/mnt/data/Screenshot 2025-11-24 174601.png" alt="" aria-hidden="true" style="display:none;"> -->
+
+  <main class="testimonials-page">
+    <header class="test-header">
+      <h2 data-aos="fade-up" class="test-title">What Our Client's Say</h2>
+      <p data-aos="fade-up" class="test-sub">Sed ut perspiciatis unde omnis iste natus error</p>
+    </header>
+
+    <section class="test-grid" aria-label="testimonials">
+      <!-- Testimonial Card 1 -->
+      <article data-aos="zoom-in" class="test-card">
+        <div class="avatar-wrap">
+          <img class="avatar" src="../Images/ap1.webp" alt="Daisy Lana">
+        </div>
+
+        <!-- large faint quote mark in background handled by CSS pseudo element -->
+
+        <div class="rating">
+          <!-- five stars -->
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+        </div>
+
+        <div class="quote">
+          <p>Sed perspiciatis unde omnis iste natus erolup tatem accusantium doloremque laudantium totam reperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+
+        <div class="author">
+          <strong class="name">Daisy Lana</strong>
+          <span class="role">Designer</span>
+        </div>
+      </article>
+
+      <!-- Testimonial Card 2 -->
+      <article  data-aos="zoom-in" class="test-card">
+        <div class="avatar-wrap">
+          <img class="avatar" src="../Images/ap2.webp" alt="Alden Smith">
+        </div>
+
+        <div class="rating">
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+          <svg viewBox="0 0 24 24" class="star" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.789 1.402 8.176L12 18.896 4.664 23.175l1.402-8.176L.132 9.21l8.2-1.192z"/></svg>
+        </div>
+
+        <div class="quote">
+          <p>Sed perspiciatis unde omnis iste natus erolup tatem accusantium doloremque laudantium totam reperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+
+        <div class="author">
+          <strong class="name">Alden Smith</strong>
+          <span class="role">Designer</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+
+
+
+
+    <footer  data-aos="zoom-out" class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          </p>
+
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
+              </div>
+
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
+              </div>
+
+              <hr class="ci-divider" />
+
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
+
+
+
+
+
+
+
+        <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

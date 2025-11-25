@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./contact.css">
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+       <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="../index.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./blog.html">Blogs</a></li>
+              <li>
+                <a style="color: #1bc900" href="./contact.html">Contact</a>
+              </li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="../index.html" style="display: flex; align-items: center">
+            <img src="../images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a style="color: #1bc900" href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="top-about">
+      <img class="top-img" src="../images/tc.webp" alt="" />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>CONTACT</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Contact</span></span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="top-contact">
+      <div class="container">
+        <div data-aos="zoom-out" class="contact-item">
+          <div class="icon">🏢</div>
+          <div>
+            <div class="txt-bold">Chinna Thirupathi,Salem,Tamilnadu</div>
+            <div class="txt-muted">Find Us</div>
+          </div>
+        </div>
+
+        <div data-aos="zoom-out" class="contact-item">
+          <div class="icon">📞</div>
+          <div>
+            <div class="txt-bold">+91 78456 32459</div>
+            <div class="txt-muted">Make a call</div>
+          </div>
+        </div>
+
+        <div data-aos="zoom-out" class="contact-item">
+          <div class="icon">✉️</div>
+          <div>
+            <div class="txt-bold">stackly@gmail.com</div>
+            <div class="txt-muted">Drop us a line</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTACT AREA -->
+    <main class="contact-main">
+      <div class="container grid">
+        <!-- LEFT: CONTACT FORM -->
+        <section data-aos="zoom-out" class="contact-form-wrap">
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="error.html"
+            method="GET"
+            aria-label="Contact form"
+          >
+            <label class="sr-only" for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+
+            <label class="sr-only" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Your e-mail"
+              required
+            />
+
+            <label class="sr-only" for="phone">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Your phone"
+              required
+            />
+
+            <label class="sr-only" for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-send">SEND MESSAGE</button>
+          </form>
+        </section>
+
+        <!-- RIGHT: MAP -->
+        <aside data-aos="zoom-out" class="map-wrap" aria-label="Office map">
+          <!-- Replace iframe src with your Google Maps embed if needed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+            width="100%"
+            height="420"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </aside>
+      </div>
+    </main>
+
+
+    <footer class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          </p>
+
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
+              </div>
+
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
+              </div>
+
+              <hr class="ci-divider" />
+
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
+
+
+
+
+
+       <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

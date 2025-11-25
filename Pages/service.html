@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service.css">
+       <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+       <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="../index.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li>
+                <a style="color: #1bc900" href="./service.html">Service</a>
+              </li>
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="../index.html" style="display: flex; align-items: center">
+            <img src="../images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about.html">About</a></li>
+            <li><a style="color: #1bc900" href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="top-about">
+      <img class="top-img" src="../images/ts.webp " alt="" />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>SERVICE</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Service</span></span>
+        </p>
+      </div>
+    </div>
+    
+     <!-- <img src="/mnt/data/Screenshot 2025-11-24 180854.png" alt="" aria-hidden="true" style="display:none;"> -->
+
+  <main class="page">
+    <header data-aos="fade-up" class="hero">
+      <p class="kicker">Our Service</p>
+      <h1 class="title">Reliable Medical Solutions<br>Tailored for Every Need</h1>
+
+     
+    </header>
+
+    <section class="grid" aria-label="Services list">
+      <!-- six demo cards (replace image src with actual product images) -->
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/s1.webp" alt="Preventive Maintenance Device">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/s2.webp" alt="Monitor">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/s3.webp" alt="Laser equipment">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/a4.webp" alt="MRI machine">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/s4.webp" alt="Lab equipment">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="card">
+        <div class="card-media">
+          <img src="../Images/s5.webp" alt="Incubator">
+        </div>
+        <div class="card-body">
+          <div class="price-small">$149 <span class="per">/visit</span></div>
+          <h3 class="card-title">Preventive Maintenance Service</h3>
+          <p class="card-text">On-demand repair service for malfunctioning or critical medical equipment with quick response and certified technicians.</p>
+          <a class="card-btn" href="../Pages/blog.html" role="button">View More</a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <main class="service-page">
+    <header class="service-top">
+      <div data-aos="zoom-in" class="media">
+        <!-- using uploaded file path exactly as requested -->
+        <img src="../Images/s6.webp" alt="Technician working on medical equipment" />
+      </div>
+
+      <div  data-aos="fade-up" class="details">
+        <p class="kicker">Service Detail</p>
+        <h1 class="title">Preventive Maintenance Service</h1>
+
+        <div class="price-row">
+          <div class="price">$149<span class="per">/visit</span></div>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="reviews">(400 Reviews)</span>
+          </div>
+        </div>
+
+        <p class="lead">
+          Ensure your medical equipment stays accurate, safe, and fully operational with our Preventive Maintenance Service.
+          Our certified technicians conduct inspections, cleaning, calibration, and testing to prevent unexpected failures and extend the life of your devices.
+        </p>
+
+        <ul class="benefits">
+          <li>Increased Equipment Lifespan</li>
+          <li>Catch issues early to avoid costly interruptions in patient care</li>
+          <li>Stay aligned with healthcare safety and maintenance standards</li>
+          <li>Ensure precise readings for diagnostics and monitoring</li>
+          <li>Preventive service is more affordable than emergency repairs</li>
+          <li>Receive full documentation after each visit for compliance and tracking</li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="testimonials">
+      <article  data-aos="zoom-in" class="testimonial">
+        <p class="quote">“Their preventive maintenance service has been a game-changer. Equipment downtime is practically zero, and we're confident in every reading we take.”</p>
+        <div class="author">
+          <!-- <img src="/mnt/data/Screenshot 2025-11-24 180907.png" alt="Dr. Elena Morris" class="avatar"> -->
+          <div>
+            <strong class="name">Dr. Elena Morris</strong>
+            <div class="role">Director, Sunrise Family Clinic</div>
+          </div>
+        </div>
+      </article>
+
+      <article data-aos="zoom-in" class="testimonial">
+        <p class="quote">“Highly professional and detail-oriented. The team is punctual and the documentation after each visit is excellent for our records.”</p>
+        <div class="author">
+          <!-- <img src="/mnt/data/Screenshot 2025-11-24 180907.png" alt="Dr. Elena Morris" class="avatar"> -->
+          <div>
+            <strong class="name">Dr. Elena Morris</strong>
+            <div class="role">Director, Sunrise Family Clinic</div>
+          </div>
+        </div>
+      </article>
+
+      <article  data-aos="zoom-in"class="testimonial">
+        <p class="quote">“Reduced interruptions, reliable equipment, and fast response times — the preventive plan saved us time and money.”</p>
+        <div class="author">
+          <!-- <img src="/mnt/data/Screenshot 2025-11-24 180907.png" alt="Dr. Elena Morris" class="avatar"> -->
+          <div>
+            <strong class="name">Dr. Elena Morris</strong>
+            <div class="role">Director, Sunrise Family Clinic</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div data-aos="zoom-in" class="cta-wrap">
+      <a class="book-btn" href="../Pages/contact.html">Book Now</a>
+    </div>
+  </main>
+
+  <main class="hero">
+    <div class="container">
+      <section data-aos="zoom-in" class="left">
+        <p class="kicker">Connecting Innovation and Care</p>
+        <h1 class="headline">
+          Connecting Innovation and<br>Care, One Device Away
+        </h1>
+        <p class="lead">Empowering healthcare providers with trusted medical equipment and responsive technical support every step forward.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="../Pages/contact.html">Get Started Now <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="./blog.html">Learn More</a>
+        </div>
+
+   
+      </section>
+
+      <section data-aos="zoom-in" class="right" aria-hidden="true">
+        <!-- using uploaded image path exactly as provided -->
+        <img src="../Images/s7.webp" alt="Medical bed equipment" class="hero-img">
+      </section>
+    </div>
+  </main>
+
+
+
+    <footer class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          </p>
+
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
+              </div>
+
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
+              </div>
+
+              <hr class="ci-divider" />
+
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+</body>
+</html>
