@@ -844,9 +844,7 @@ body{
   .kb-card { padding: 20px; }
   .kb-card-title { margin-top: 50px; }
   .kb-title { font-size: 32px; }
-  .kb-section{
-    margin-top: 230px;
-  }
+
   .kb-grid{
   display: flow;
   }
@@ -854,7 +852,7 @@ body{
 
 /* Small mobile tweaks */
 @media (max-width: 520px) {
-  .kb-section { padding: 40px 18px; margin-top: 330px;}
+  .kb-section { padding: 40px 18px;}
   .kb-title { font-size: 24px; }
   .kb-card-body { font-size: 13px; }
   .kb-number { font-size: 26px; left: 16px; top: 14px; }
