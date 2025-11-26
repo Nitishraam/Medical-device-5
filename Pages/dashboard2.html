@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly</title>
-    <link rel="stylesheet" href="./blog.css">
-       <link
+    <link rel="stylesheet" href="./dashboard2.css">
+      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -31,9 +31,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-     <div class="mb">
+      <div class="mb">
       <div class="mb-main">
         <div class="menu-btn">
           <svg
@@ -55,25 +58,27 @@
           <div hidden id="menu">
             <ul class="menu-list">
               <li>
-                <a href="../index.html">Home</a>
+                <a href="./home2.html">Home</a>
                 <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
                 <div id="menu2" hidden>
-                  <a href="./home2.html">Home2</a>
+                  <a href="../index.html">Home1</a>
                 </div>
               </li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./service.html">Service</a></li>
-              <li><a style="color: #1bc900" href="./blog.html">Blogs</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./dashboard.html">Dashboard</a></li>
+              <li><a href="./about2.html">About</a></li>
+              <li>
+                <a href="./service2.html">Service</a>
+              </li>
+              <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a   style="color: #1bc900"  href="./dashboard2.html">Dashboard</a></li>
             </ul>
           </div>
         </div>
         <div class="mb-logo">
-          <a href="../index.html" style="display: flex; align-items: center">
+          <a href="./home2.html" style="display: flex; align-items: center">
             <img src="../Images/logo.webp" alt="" />
           </a>
-          <a class="login2" href="./login.html"
+          <a class="login2" href="./login2.html"
             ><i class="fa-solid fa-user"></i>Log in</a
           >
         </div>
@@ -81,14 +86,14 @@
     </div>
     <nav id="nav">
       <div class="main-menu">
-        <a href="../index.html" style="display: flex; align-items: center">
+        <a href="./home2.html" style="display: flex; align-items: center">
           <img src="../Images/logo.webp" alt="" />
         </a>
         <div class="menu-child">
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a href="../index.html">Home</a
+                <a  href="./home2.html">Home</a
                 ><i
                   onclick="menu3.hidden^=1"
                   class="fa-solid fa-caret-down"
@@ -97,7 +102,7 @@
                   style="position: absolute; top: 25px; background-color: white"
                 >
                   <a
-                    href="./home2.html"
+                    href="../index.html"
                     style="
                       background-color: white;
                       border: 1px solid black;
@@ -105,19 +110,19 @@
                     "
                     id="menu3"
                     hidden
-                    >Home2</a
+                    >Home1</a
                   >
                 </div>
               </li>
             </div>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./service.html">Service</a></li>
-            <li><a style="color: #1bc900" href="./blog.html">Blogs</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a style="color: #1bc900"  href="./dashboard2.html">Dashboard</a></li>
           </ul>
 
-          <a class="login" href="./login.html"
+          <a class="login" href="./login2.html"
             ><i class="fa-solid fa-user"></i>Log in</a
           >
         </div>
@@ -125,163 +130,151 @@
     </nav>
 
     <div class="top-about">
-      <img class="top-img" src="../Images/tb.webp" alt="" />
+      <img class="top-img" src="../Images/hd.webp" alt="" />
 
       <div data-aos="zoom-in" class="overlay">
-        <h1>BLOG</h1>
+        <h1>DASHBOARD</h1>
         <p class="breadcrumb">
-          <span class="home-icon">🏠Home / <span>Blog</span></span>
+          <span class="home-icon">🏠Home / <span>Dashboard</span></span>
         </p>
       </div>
     </div>
-    
-  <!-- decorative hidden path for pipeline (your uploaded file) -->
-  <!-- <img src="/mnt/data/Screenshot 2025-11-25 112820.png" alt="" aria-hidden="true" style="display:none;"> -->
 
-  <div class="site">
-    <aside class="sidebar">
- 
 
-      <div data-aos="fade-up" class="widget categories">
-        <h4 class="widget-title">Categories</h4>
-        <ul>
-          <li><a >Cardiogram <span class="count">14</span></a></li>
-          <li><a>Scalpel instrument <span class="count">18</span></a></li>
-          <li><a >Microscope <span class="count">4</span></a></li>
-          <li><a >First aid kit <span class="count">9</span></a></li>
-          <li><a >Stethoscope <span class="count">23</span></a></li>
-          <li><a>Thermometer <span class="count">15</span></a></li>
-        </ul>
-      </div>
 
-      <div data-aos="fade-up" class="widget recent">
-        <h4 class="widget-title">Recent post</h4>
-        <ul class="recent-list">
-          <li>
-            <img src="../Images/a1.webp" alt="">
-            <div>
-              <a>Well illum qui dolorem eum?</a>
-              <time>Feb 01, 2023</time>
-            </div>
-          </li>
-          <li>
-                       <img src="../Images/b1.webp" alt="">
+      <h1 class="title">Dashboard</h1>
 
-            <div>
-              <a >Nisi ut aliquid ex commodi?</a>
-              <time>Feb 01, 2023</time>
-            </div>
-          </li>
-          <li>
-                       <img src="../Images/b2.webp" alt="">
-
-            <div>
-              <a >Which of ever undertakes?</a>
-              <time>Feb 01, 2023</time>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div data-aos="fade-up" data-aos="fade-up" class="widget tags">
-        <h4 class="widget-title">Tags</h4>
-        <div class="tag-cloud">
-          <a href="./error.html">#Android</a>
-          <a href="./error.html">#Blog</a>
-          <a href="./error.html">#Device</a>
-          <a href="./error.html">#Engineer</a>
-          <a href="./error.html">#Gadget</a>
-          <a href="./error.html">#Mobile</a>
-          <a href="./error.html">#News</a>
-          <a href="./error.html">#Raspberrypi</a>
-          <a href="./error.html">#Robot</a>
-          <a href="./error.html">#Smartphone</a>
-          <a href="./error.html">#Techie</a>
+    <!-- TOP CARDS -->
+    <section class="top-cards">
+        <div class="card">
+            <h2>50 001</h2>
+            <p>Total Patients</p>
         </div>
-      </div>
-    </aside>
+        <div class="card">
+            <h2>34 863</h2>
+            <p>Total Patients Admitted</p>
+        </div>
+        <div class="card">
+            <h2>$ 8 742</h2>
+            <p>Avg Treat. Costs</p>
+        </div>
+        <div class="card">
+            <h2>53 min</h2>
+            <p>Avg ER Waiting Time</p>
+        </div>
+        <div class="card">
+            <h2>596</h2>
+            <p>Available Staff</p>
+        </div>
+    </section>
 
-    <main class="content">
-      <div class="posts-grid">
+    <section class="charts-grid">
+        <div class="chart-box">
+            <h3>Outpatients vs. Inpatients Trend</h3>
+            <canvas id="barChart"></canvas>
+        </div>
 
-        <!-- Post 1 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                       <img src="../Images/a1.webp" alt="">
+        <div class="chart-box">
+            <h3>Patients by Gender</h3>
+            <canvas id="donutChart"></canvas>
+        </div>
+    </section>
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a>Well illum qui dolorem eum?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
+    <section class="bottom-grid">
 
-        <!-- Post 2 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                       <img src="../Images/b1.webp" alt="">
+        <div class="table-box">
+            <h3>Patient By Division</h3>
+            <table>
+                <tr><th>Division</th><th>Inpatient</th><th>Outpatient</th></tr>
+                <tr><td>Surgery</td><td>9,471</td><td>17,642</td></tr>
+                <tr><td>Dermatology</td><td>6,869</td><td>13,053</td></tr>
+                <tr><td>Neurology</td><td>5,298</td><td>9,772</td></tr>
+            </table>
+        </div>
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a >Nisi ut aliquid ex commodi?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
+        <div class="chart-box">
+            <h3>Avg Waiting Time by Division</h3>
+            <canvas id="horizontalChart"></canvas>
+        </div>
 
-        <!-- Post 3 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                        <img src="../Images/b2.webp" alt="">
+        <div class="table-box">
+            <h3>Doctor Explained Treatment Understandably</h3>
+            <canvas id="ratingChart"></canvas>
+        </div>
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a >Which of ever undertakes?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
+    </section>
 
-        <!-- Post 4 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                      <img src="../Images/b3.webp" alt="">
+<script>
+    // BAR CHART
+new Chart(document.getElementById("barChart"), {
+    type: "bar",
+    data: {
+        labels: ["W42", "W43", "W44", "W45", "W46", "W47", "W48", "W49", "W50", "W51"],
+        datasets: [
+            {
+                label: "Inpatients",
+                data: [1800, 2100, 1600, 1400, 2000, 1800, 2100, 2300, 1900, 1700],
+                backgroundColor: "#4e73df"
+            },
+            {
+                label: "Outpatients",
+                data: [2300, 3000, 2700, 2500, 2600, 2900, 2400, 3100, 2600, 2500],
+                backgroundColor: "#1cc88a"
+            }
+        ]
+    },
+    options: { responsive: true }
+});
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a>Where can I get some?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
+// DONUT CHART
+new Chart(document.getElementById("donutChart"), {
+    type: "doughnut",
+    data: {
+        labels: ["Excellent", "Good", "Neutral/Negative"],
+        datasets: [{
+            data: [42, 30, 20],
+            backgroundColor: ["#4e73df", "#36b9cc", "#f6c23e"]
+        }]
+    },
+    options: {
+        cutout: "70%"
+    }
+});
 
-        <!-- Post 5 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                  <img src="../Images/a4.webp" alt="">
+// HORIZONTAL BAR CHART
+new Chart(document.getElementById("horizontalChart"), {
+    type: "bar",
+    data: {
+        labels: ["Cardiology", "Dermatology", "Neurology"],
+        datasets: [{
+            data: [50, 37, 59],
+            backgroundColor: ["#1cc88a", "#4e73df", "#36b9cc"]
+        }]
+    },
+    options: {
+        indexAxis: "y",
+        responsive: true
+    }
+});
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a>Who avoids a produces?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
+// RATING CHART
+new Chart(document.getElementById("ratingChart"), {
+    type: "bar",
+    data: {
+        labels: ["Fully Agree", "Rather Agree", "Rather Disagree", "Fully Disagree", "Don't Know"],
+        datasets: [{
+            data: [45, 26, 17, 7, 4],
+            backgroundColor: ["#4e73df"]
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
 
-        <!-- Post 6 -->
-        <article data-aos="zoom-out" class="post">
-          <figure class="thumb">
-                       <img src="../Images/a2.webp" alt="">
+</script>
 
-            <figcaption class="date">01 Feb, 2023</figcaption>
-          </figure>
-          <h3 class="post-title"><a >Where does it come from?</a></h3>
-          <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit doli. Aenean commodo ligula eg</p>
-          <a class="read-more" href="./error.html">Read more</a>
-        </article>
-
-      </div>
-    </main>
-  </div>
-
-
-      <footer  class="ft-wrap" role="contentinfo">
+  <footer class="ft-wrap" role="contentinfo">
       <div class="ft-inner">
         <!-- About / Subscribe -->
         <div class="ft-col ft-about">
@@ -363,12 +356,12 @@
         <div class="ft-col ft-right">
           <h3 class="ft-title">Quick Links</h3>
           <ul class="ft-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./service.html">Service</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./home2.html">Home</a></li>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blog</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
           </ul>
         </div>
       </div>
@@ -393,9 +386,7 @@
     </footer>
 
 
-
-
-
+    
        <script>
       // $(document).on('ready', function () {
       // initialization of aos
@@ -405,5 +396,6 @@
         mirror: true,
       });
     </script>
+    
 </body>
 </html>

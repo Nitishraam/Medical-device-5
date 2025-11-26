@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./home2.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+      <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a style="color: #1bc900" href="./home2.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a href="./about2.html">About</a></li>
+              <li>
+                <a href="./service2.html">Service</a>
+              </li>
+              <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a  style="color: #1bc900"  href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="top-about">
+      <img class="top-img" src="../Images/hh.webp " alt="" />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>HOME</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Home</span></span>
+        </p>
+      </div>
+    </div>
+
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <div data-aos="fade-up" class="kicker">Why Maintenance Matters</div>
+        <h1  data-aos="fade-up">Prevent Issues. Protect Every Patient</h1>
+        <p data-aos="fade-up" class="lead">
+          Regular medical equipment maintenance is essential to ensure accurate diagnostics, safe treatments,
+          and uninterrupted patient care. By identifying issues early, reducing unexpected failures,
+          and extending the life of your devices, preventive maintenance supports better outcomes.
+        </p>
+
+        <a data-aos="zoom-in" class="btn" href="./about2.html">View More</a>
+      </div>
+
+      <div class="hero-image-wrap">
+        <!-- using the user's uploaded image path as requested -->
+        <img data-aos="zoom-out" src="../Images/hp1.webp" alt="medical device maintenance" class="hero-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPES -->
+  <section class="types container">
+    <div data-aos="fade-up" class="types-header">
+      <div class="kicker small">Types of Maintenance</div>
+      <h2>Comprehensive Maintenance Solutions for Medical Device Reliability</h2>
+      <p class="sub">Explore essential maintenance types that ensure accuracy, safety, and extended equipment lifespan.</p>
+    </div>
+
+    <div class="cards">
+      <article data-aos="zoom-out" class="card card--accent">
+        <div class="card-icon">🛡️</div>
+        <h3>Preventive Maintenance</h3>
+        <p>Routine scheduled service to prevent failures and maintain consistent device performance.</p>
+        <img src="../Images/hp2.webp" alt="technician" class="card-photo" />
+      </article>
+
+      <article data-aos="zoom-out" class="card">
+        <div class="card-icon">🔧</div>
+        <h3>Corrective Maintenance</h3>
+        <p>Diagnosing and repairing problems to restore device function quickly and safely.</p>
+        <img src="../Images/hp3.webp" alt="technician" class="card-photo" />
+      </article>
+
+      <article data-aos="zoom-out" class="card">
+        <div class="card-icon">📏</div>
+        <h3>Calibration Service</h3>
+        <p>Precision calibration to keep measurements and outputs inside required tolerances.</p>
+        <img src="../Images/hp4.webp" alt="technician" class="card-photo" />
+        </article>
+    </div>
+  </section>
+
+ <section class="section testimonials">
+    <div data-aos="fade-up" class="section-title">
+      <h2>What Our Client’s Say</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error</p>
+    </div>
+
+    <div class="testimonial-wrapper">
+      <!-- <button class="ts-arrow ts-arrow--left">&#10094;</button> -->
+
+      <div class="testimonial-cards">
+        <!-- Card 1 -->
+        <article data-aos="zoom-in" class="testimonial-card">
+          <div class="ts-header">
+            <div class="ts-user">
+              <img src="../Images/hp5.webp" alt="client 1">
+            </div>
+            <div class="ts-rating">
+              ★★★★★
+            </div>
+          </div>
+          <p class="ts-text">
+            Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+
+          <div class="ts-footer">
+            <h4>Oliver Greenwood</h4>
+            <span>Designer</span>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article data-aos="zoom-in" class="testimonial-card">
+          <div class="ts-header">
+            <div class="ts-user">
+              <img src="../Images/hp6.webp" alt="client 2">
+            </div>
+            <div class="ts-rating">
+              ★★★★★
+            </div>
+          </div>
+          <p class="ts-text">
+            Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+
+          <div class="ts-footer">
+            <h4>Daisy Lana</h4>
+            <span>Designer</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- <button class="ts-arrow ts-arrow--right">&#10095;</button> -->
+    </div>
+
+  
+  </section>
+
+  <!-- BLOG / NEWS -->
+  <section class="section blog">
+    <div data-aos="fade-up" class="section-title">
+      <h2>Latest News &amp; Blog</h2>
+      <p>Sed ut perspiciatis unde omnis iste natus error</p>
+    </div>
+
+    <div class="blog-grid">
+      <!-- Blog card 1 -->
+      <article data-aos="zoom-in" class="blog-card">
+        <div class="blog-img">
+          <img src="../Images/hp7.webp" alt="blog 1">
+          <!-- <span class="badge badge-red">COVID-19</span> -->
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="icon">📅</span>
+            <span>26 Sep 2020</span>
+          </div>
+          <h3>Mirage Deep Dive Under anding Timim Response</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
+          <a href="#" class="blog-link">READ MORE +</a>
+        </div>
+      </article>
+
+      <!-- Blog card 2 -->
+      <article data-aos="zoom-in" class="blog-card">
+        <div class="blog-img">
+          <img src="../Images/tb.webp" alt="blog 2">
+          <!-- <span class="badge badge-blue">SANITIZER</span> -->
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="icon">📅</span>
+            <span>26 Sep 2020</span>
+          </div>
+          <h3>How To Feel More Energe Even You’re Stuck</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
+          <a href="#" class="blog-link">READ MORE +</a>
+        </div>
+      </article>
+
+      <!-- Blog card 3 -->
+      <article data-aos="zoom-in" class="blog-card">
+        <div class="blog-img">
+          <img src="../Images/hp8.webp" alt="blog 3">
+          <!-- <span class="badge badge-orange">MEDICAL</span> -->
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="icon">📅</span>
+            <span>26 Sep 2020</span>
+          </div>
+          <h3>Dolorem eum fugiat quo voluptas nulla pariatur</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
+          <a href="#" class="blog-link">READ MORE +</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+      <footer class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          </p>
+
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
+              </div>
+
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
+              </div>
+
+              <hr class="ci-divider" />
+
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="./home2.html">Home</a></li>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blog</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
+
+
+
+       <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+
+</body>
+</html>

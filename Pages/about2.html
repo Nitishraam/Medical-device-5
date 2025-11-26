@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./about2.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+      <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="./home2.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a style="color: #1bc900" href="./about2.html">About</a></li>
+              <li>
+                <a href="./service2.html">Service</a>
+              </li>
+              <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav">
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a  href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a style="color: #1bc900" href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="top-about">
+      <img class="top-img" src="../Images/ha1.webp " alt="" />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>ABOUT</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>About</span></span>
+        </p>
+      </div>
+    </div>
+
+<section class="goals-section">
+    <div  data-aos="fade-up" class="section-title">
+      <h2>Our Main Goals</h2>
+      <!-- <p>Sed ut perspiciatis unde omnis iste natus error</p> -->
+    </div>
+
+    <div class="goals-grid">
+      <div data-aos="zoom-out" class="goal-box">
+        <h3>Medical Accessories</h3>
+        <p>Sed ut perspiciatis unde omnis wste natus error voluptate explic</p>
+        <!-- <span class="arrow">→</span> -->
+      </div>
+
+      <div data-aos="zoom-out" class="goal-box">
+        <h3>Covid - 19 Treatment Center</h3>
+        <p>Sed ut perspiciatis unde omnis wste natus error voluptate explic</p>
+        <!-- <span class="arrow">→</span> -->
+      </div>
+
+      <div data-aos="zoom-out" class="goal-box">
+        <h3>24/7 Hours Emergency Care</h3>
+        <p>Sed ut perspiciatis unde omnis wste natus error voluptate explic</p>
+        <!-- <span class="arrow">→</span> -->
+      </div>
+
+      <div data-aos="zoom-out" class="goal-box">
+        <h3>Online Free Consultations</h3>
+        <p>Sed ut perspiciatis unde omnis wste natus error voluptate explic</p>
+        <!-- <span class="arrow">→</span> -->
+      </div>
+    </div>
+  </section>
+
+
+  <div data-aos="zoom-in" class="container">
+    <!-- using user's uploaded file path as a decorative image -->
+    <!-- <img src="../Images/a1.webp" alt="decorative" class="hero-img" /> -->
+
+    <section class="stats-row" id="stats">
+      <div class="stat" data-target="2560" aria-hidden="false">
+        <div class="icon" aria-hidden="true">
+          <!-- heart outline -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">SATISFIED CLIENTS</div>
+      </div>
+
+      <div class="stat" data-target="9862">
+        <div class="icon" aria-hidden="true">
+          <!-- hands/prayer icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4l-4 6-4-6" />
+            <path d="M2 13s4 0 6 3 6 5 6 5 3-2 6-5 6-3 6-3" />
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">FINISHED WORKS</div>
+      </div>
+
+      <div class="stat" data-target="7563">
+        <div class="icon" aria-hidden="true">
+          <!-- group icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">COVID -19 SPECIALIST</div>
+      </div>
+
+      <div class="stat" data-target="6534">
+        <div class="icon" aria-hidden="true">
+          <!-- clock / history icon -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v6h6"/>
+            <path d="M21 12a9 9 0 1 1-9-9"/>
+            <path d="M12 7v6l4 2"/>
+          </svg>
+        </div>
+        <div class="count" data-value>0</div>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="label">GLOBAL BRANDS</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // animateCount: animates number from 0 to target using requestAnimationFrame
+    function animateCount(el, start, end, duration) {
+      const range = end - start;
+      const startTime = performance.now();
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = easeOutCubic(progress);
+        const current = Math.floor(start + (range * eased));
+        el.textContent = current.toLocaleString(); // format with commas
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = end.toLocaleString(); // ensure exact final value
+        }
+      }
+      requestAnimationFrame(tick);
+    }
+
+    // When stats container becomes visible, run animations once
+    document.addEventListener('DOMContentLoaded', () => {
+      const stats = document.querySelectorAll('.stat');
+      const opts = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const item = entry.target;
+            // animate only once per item
+            if (!item.classList.contains('counted')) {
+              const target = parseInt(item.getAttribute('data-target') || '0', 10);
+              const display = item.querySelector('.count');
+              // small randomization of duration for a pleasant stagger effect
+              const duration = 1600 + (Math.random() * 600);
+              animateCount(display, 0, target, duration);
+              item.classList.add('counted');
+              // make visible (entrance)
+              item.classList.add('visible');
+            }
+            // if you want all stats to animate together when the container is visible,
+            // you could call obs.disconnect() here.
+          }
+        });
+      }, opts);
+
+      stats.forEach(s => observer.observe(s));
+
+      // also add a small reveal for items that are already visible (fallback)
+      stats.forEach(s => {
+        const rect = s.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0 && !s.classList.contains('visible')) {
+          s.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+
+
+
+  <!-- DOCTORS SECTION -->
+  <section class="doctors-section">
+    <div class="section-header">
+      <div>
+        <!-- <h2>Our Main Goals</h2> -->
+        <h2 data-aos="fade-up">Meet Our Experts</h2>
+      </div>
+      <!-- <a href="#" class="view-btn">VIEW ALL DOCTORS +</a> -->
+    </div>
+
+    <div class="doctors-grid">
+
+      <!-- Doctor 1 -->
+      <div data-aos="zoom-in" class="doctor-card">
+        <img src="../Images/ha2.webp" class="doctor-photo">
+        <div class="doctor-info">
+          <div class="social">
+            <a href="error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="error.html"><i class="fab fa-twitter"></i></a>
+            <a href="error.html"><i class="fab fa-instagram"></i></a>
+          </div>
+          <h3>DR. Michael Coleman</h3>
+          <p>COVID-19 DOCTOR</p>
+        </div>
+      </div>
+
+      <!-- Doctor 2 -->
+      <div data-aos="zoom-in" class="doctor-card">
+        <img src="../Images/ha3.webp" class="doctor-photo">
+        <div class="doctor-info">
+          <div class="social">
+            <a href="error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="error.html"><i class="fab fa-twitter"></i></a>
+            <a href="error.html"><i class="fab fa-instagram"></i></a>
+          </div>
+          <h3>Alexander Knowles</h3>
+          <p>COVID-19 DOCTOR</p>
+        </div>
+      </div>
+
+      <!-- Doctor 3 -->
+      <div data-aos="zoom-in" class="doctor-card">
+        <img src="../Images/ha7.webp" class="doctor-photo">
+        <div class="doctor-info">
+          <div class="social">
+            <a href="error.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="error.html"><i class="fab fa-twitter"></i></a>
+            <a href="error.html"><i class="fab fa-instagram"></i></a>
+          </div>
+          <h3>DR. Finley Johnson</h3>
+          <p>COVID-19 DOCTOR</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONSULTATION BANNER -->
+  <section data-aos="zoom-out" class="banner">
+    <div class="banner-content">
+      <span class="badge">COVID-19</span>
+      <h2>Needs For Consultations</h2>
+      <a href="#" class="banner-btn">SHOP NOW +</a>
+    </div>
+
+    <img src="../Images/tc.webp" class="banner-img">
+  </section>
+
+
+   <section class="testimonials-section">
+    <div class="container">
+      <header data-aos="fade-up" class="section-head">
+        <h2>What Our Client's Say</h2>
+        <p class="muted">Sed ut perspiciatis unde omnis iste natus error</p>
+      </header>
+
+      <div class="testimonials-row">
+        <article data-aos="zoom-out" class="testimonial">
+          <div class="avatar">
+            <img src="../Images/ha6.webp" alt="avatar">
+          </div>
+
+          <div class="testimonial-body">
+            <div class="stars">★ ★ ★ ★ ☆</div>
+            <p class="text">
+              Sed perspiciatis unde omnis iste natus erolup tatem accusantium doloremque laudantium totam
+              reperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+
+            <div class="meta">
+              <strong>Oliver Greenwood</strong>
+              <span class="role">Designer</span>
+            </div>
+          </div>
+
+          <div class="quote-bg">“</div>
+        </article>
+
+        <article data-aos="zoom-out" class="testimonial">
+          <div class="avatar">
+            <img src="../Images/ha5.webp" alt="avatar">
+          </div>
+
+          <div class="testimonial-body">
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p class="text">
+              Sed perspiciatis unde omnis iste natus erolup tatem accusantium doloremque laudantium totam
+              reperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+
+            <div class="meta">
+              <strong>Daisy Lana</strong>
+              <span class="role">Designer</span>
+            </div>
+          </div>
+
+          <div class="quote-bg">“</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+
+
+ <footer  class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          </p>
+
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
+              </div>
+
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
+              </div>
+
+              <hr class="ci-divider" />
+
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="./home2.html">Home</a></li>
+            <li><a href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blog</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
+
+
+
+
+
+
+       <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>
