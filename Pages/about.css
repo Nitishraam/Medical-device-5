@@ -407,7 +407,7 @@ nav {
 
 @media (max-width: 520px) {
   .hero-section { padding: 28px 18px; }
-  .badge { width: 86px; height: 96px; }
+  .badge { width: 86px; height: 96px; display: none;}
   .badge-number { font-size: 32px; }
   .section-title { font-size: 24px; }
   .photo-wrap { width: 260px; height: 260px; }
@@ -869,7 +869,7 @@ nav {
 
 
 .ft-wrap {
-  padding: 64px 40px 28px;
+  padding: 10px;
   background: linear-gradient(
     180deg,
     rgba(15, 16, 23, 0.98) 0%,
