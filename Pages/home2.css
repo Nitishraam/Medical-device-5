@@ -277,6 +277,101 @@ nav {
   display:block;
   box-shadow: 0 8px 30px rgba(16,24,40,0.08);
 }
+/* grid */
+.products{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  padding: 10px;
+}
+
+/* card */
+.card{
+  background:#fff;
+  padding:18px;
+  border-radius:8px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.07);
+  position:relative;
+  overflow:hidden;
+  transition:.2s;
+}
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* image */
+.card img{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+  display:block;
+  margin:auto;
+  margin-bottom:10px;
+}
+
+/* overlay icons */
+.icons{
+  position:absolute;
+  top:10px;
+  right:10px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  opacity:0;
+  transform:translateY(-10px);
+  transition:.2s;
+}
+
+.card:hover .icons{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.icons a{
+  width:38px;
+  height:38px;
+  border-radius:6px;
+  background:#00000015;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:18px;
+  color:#000;
+  transition:.2s;
+}
+.icons a:hover{
+  background:#00000025;
+  transform:scale(1.07);
+}
+
+/* product text */
+.title{
+  font-size:14px;
+  margin-bottom:8px;
+  text-align:center;
+}
+.price{
+  font-size:14px;
+  text-align:center;
+}
+.price .old{
+  text-decoration:line-through;
+  color:#d33;
+  margin-right:7px;
+}
+.price .new{
+  font-weight:600;
+  color:#e14a3b;
+}
+
+/* responsive */
+@media(max-width:900px){
+  .products{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:550px){
+  .products{grid-template-columns:1fr;}
+}
 
 /* TYPES */
 .types{
