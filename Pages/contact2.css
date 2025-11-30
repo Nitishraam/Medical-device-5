@@ -177,7 +177,6 @@ nav {
   left: 15%;
 }
 
-
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -314,8 +313,6 @@ textarea {
     min-height: 180px;
   }
 }
-
-
 
 .ft-wrap {
   padding: 10px;
@@ -562,8 +559,6 @@ textarea {
   }
 }
 @media (max-width: 520px) {
-
-  
   .ft-inner {
     gap: 12px;
   }
@@ -571,11 +566,6 @@ textarea {
     height: 32px;
   }
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
   nav {
@@ -708,7 +698,8 @@ textarea {
   }
 }
 /* Remove mobile side gap */
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -719,4 +710,3 @@ img {
   height: auto;
   display: block;
 }
-
