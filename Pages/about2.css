@@ -905,6 +905,20 @@ body {
   .logo {
     height: 32px;
   }
+  /* Remove mobile side gap */
+html,
+body {
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -1041,7 +1055,7 @@ body {
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* Make all images responsive */
