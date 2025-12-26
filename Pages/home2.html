@@ -3,547 +3,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stackly</title>
+    <title>Stackly - Medical Equipment Excellence</title>
     <link rel="stylesheet" href="./home2.css">
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
-      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-      <div class="mb">
-      <div class="mb-main">
-        <div class="menu-btn">
-          <svg
-            onclick="menu.hidden^=1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-            height="24"
-            width="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-
-          <div hidden id="menu">
-            <ul class="menu-list">
-              <li>
-                <a style="color: #1bc900" href="./home2.html">Home</a>
-                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
-                <div id="menu2" hidden>
-                  <a href="../index.html">Home1</a>
+    <!-- NAV (UNCHANGED) -->
+    <div class="mb">
+        <div class="mb-main">
+            <div class="menu-btn">
+                <svg onclick="menu.hidden^=1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" height="24" width="24">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/>
+                </svg>
+                <div hidden id="menu">
+                    <ul class="menu-list">
+                        <li><a style="color: #1bc900" href="./home2.html">Home</a><i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i><div id="menu2" hidden><a href="../index.html">Home1</a></div></li>
+                        <li><a href="./about2.html">About</a></li>
+                        <li><a href="./service2.html">Service</a></li>
+                        <li><a href="./blog2.html">Blogs</a></li>
+                        <li><a href="./contact2.html">Contact</a></li>
+                        <li><a href="./dashboard2.html">Dashboard</a></li>
+                    </ul>
                 </div>
-              </li>
-              <li><a href="./about2.html">About</a></li>
-              <li>
-                <a href="./service2.html">Service</a>
-              </li>
-              <li><a href="./blog2.html">Blogs</a></li>
-              <li><a href="./contact2.html">Contact</a></li>
-              <li><a href="./dashboard2.html">Dashboard</a></li>
-            </ul>
-          </div>
+            </div>
+            <div class="mb-logo">
+                <a href="./home2.html" style="display: flex; align-items: center"><img src="../Images/logo.webp" alt="" /></a>
+                <a class="login2" href="./login2.html"><i class="fa-solid fa-user"></i>Log in</a>
+            </div>
         </div>
-        <div class="mb-logo">
-          <a href="./home2.html" style="display: flex; align-items: center">
-            <img src="../Images/logo.webp" alt="" />
-          </a>
-          <a class="login2" href="./login2.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
-        </div>
-      </div>
     </div>
     <nav id="nav">
-      <div class="main-menu">
-        <a href="./home2.html" style="display: flex; align-items: center">
-          <img src="../Images/logo.webp" alt="" />
-        </a>
-        <div class="menu-child">
-          <ul class="menu-list2">
-            <div style="position: relative">
-              <li>
-                <a  style="color: #1bc900"  href="./home2.html">Home</a
-                ><i
-                  onclick="menu3.hidden^=1"
-                  class="fa-solid fa-caret-down"
-                ></i>
-                <div
-                  style="position: absolute; top: 25px; background-color: white"
-                >
-                  <a
-                    href="../index.html"
-                    style="
-                      background-color: white;
-                      border: 1px solid black;
-                      padding: 4px;
-                    "
-                    id="menu3"
-                    hidden
-                    >Home1</a
-                  >
-                </div>
-              </li>
+        <div class="main-menu">
+            <a href="./home2.html" style="display: flex; align-items: center"><img src="../Images/logo.webp" alt="" /></a>
+            <div class="menu-child">
+                <ul class="menu-list2">
+                    <div style="position: relative">
+                        <li><a style="color: #1bc900" href="./home2.html">Home</a><i onclick="menu3.hidden^=1" class="fa-solid fa-caret-down"></i><div style="position: absolute; top: 25px; background-color: white"><a href="../index.html" style="background-color: white; border: 1px solid black; padding: 4px;" id="menu3" hidden>Home1</a></div></li>
+                    </div>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./service2.html">Service</a></li>
+                    <li><a href="./blog2.html">Blogs</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                    <li><a href="./dashboard2.html">Dashboard</a></li>
+                </ul>
+                <a class="login" href="./login2.html"><i class="fa-solid fa-user"></i>Log in</a>
             </div>
-            <li><a href="./about2.html">About</a></li>
-            <li><a href="./service2.html">Service</a></li>
-            <li><a href="./blog2.html">Blogs</a></li>
-            <li><a href="./contact2.html">Contact</a></li>
-            <li><a href="./dashboard2.html">Dashboard</a></li>
-          </ul>
-
-          <a class="login" href="./login2.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
         </div>
-      </div>
     </nav>
 
+    <!-- NEW HERO BREADCRUMB -->
     <div class="top-about">
-      <img class="top-img" src="../Images/hh.webp " alt="" />
-
-      <div data-aos="zoom-in" class="overlay">
-        <h1>HOME</h1>
-        <p class="breadcrumb">
-          <span class="home-icon">🏠Home / <span>Home</span></span>
-        </p>
-      </div>
-    </div>
-
-
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner container">
-      <div class="hero-text">
-        <div data-aos="fade-up" class="kicker">Why Maintenance Matters</div>
-        <h1  data-aos="fade-up">Prevent Issues. Protect Every Patient</h1>
-        <p data-aos="fade-up" class="lead">
-          Regular medical equipment maintenance is essential to ensure accurate diagnostics, safe treatments,
-          and uninterrupted patient care. By identifying issues early, reducing unexpected failures,
-          and extending the life of your devices, preventive maintenance supports better outcomes.
-        </p>
-
-        <a data-aos="zoom-in" class="btn" href="./about2.html">View More</a>
-      </div>
-
-      <div class="hero-image-wrap">
-        <!-- using the user's uploaded image path as requested -->
-        <img data-aos="zoom-out" src="../Images/hp1.webp" alt="medical device maintenance" class="hero-image" />
-      </div>
-    </div>
-  </section>
-
-
-  
-<h2 style="margin-bottom:15px;text-align: center;">Featured Products</h2>
-
-<div class="products">
-
-  <!-- Product 1 -->
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e7.webp" alt="">
-    <p class="title">Medical Microscope</p>
-    <p class="price">
-      <span class="old">£250.00</span>
-      <span class="new">£190.00</span>
-    </p>
-  </div>
-
-  <!-- Product 2 -->
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e1.webp" alt="">
-    <p class="title">Celiosurgery column </p>
-    <p class="price"><span class="new">£160.00</span></p>
-  </div>
-
-  <!-- Product 3 -->
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e8.webp" alt="">
-    <p class="title">Medical Thermometer</p>
-    <p class="price">
-      <span class="old">£30.00</span>
-      <span class="new">£20.00</span>
-    </p>
-  </div>
-
-  <!-- Product 4 -->
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e2.webp" alt="">
-    <p class="title"> medical endoscope </p>
-    <p class="price">
-      <span class="old">£1500.00</span>
-      <span class="new">£900.00</span>
-    </p>
-  </div>
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e3.webp" alt="">
-    <p class="title">Endoscopy</p>
-    <p class="price">
-      <span class="old">£150.00</span>
-      <span class="new">£90.00</span>
-    </p>
-  </div>
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e4.webp" alt="">
-    <p class="title">Non Portable HD Laparoscopic</p>
-    <p class="price">
-      <span class="old">£1500.00</span>
-      <span class="new">£700.00</span>
-    </p>
-  </div>
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e5.webp" alt="">
-    <p class="title"> Endoscopy System</p>
-    <p class="price">
-      <span class="old">£750.00</span>
-      <span class="new">£600.00</span>
-    </p>
-  </div>
-  <div class="card">
-    <div class="icons">
-      <a href="./error.html">❤</a>
-      <a href="./error.html">🛒</a>
-    </div>
-    <img src="../Images/e6.webp" alt="">
-    <p class="title">edical Endoscope Camera</p>
-    <p class="price">
-      <span class="old">£650.00</span>
-      <span class="new">£500.00</span>
-    </p>
-  </div>
-
-</div>
-
-  <!-- TYPES -->
-  <section class="types container">
-    <div data-aos="fade-up" class="types-header">
-      <div class="kicker small">Types of Maintenance</div>
-      <h2>Comprehensive Maintenance Solutions for Medical Device Reliability</h2>
-      <p class="sub">Explore essential maintenance types that ensure accuracy, safety, and extended equipment lifespan.</p>
-    </div>
-
-    <div class="cards">
-      <article data-aos="zoom-out" class="card card--accent">
-        <div class="card-icon">🛡️</div>
-        <h3>Preventive Maintenance</h3>
-        <p>Routine scheduled service to prevent failures and maintain consistent device performance.</p>
-        <img src="../Images/hp2.webp" alt="technician" class="card-photo" />
-      </article>
-
-      <article data-aos="zoom-out" class="card">
-        <div class="card-icon">🔧</div>
-        <h3>Corrective Maintenance</h3>
-        <p>Diagnosing and repairing problems to restore device function quickly and safely.</p>
-        <img src="../Images/hp3.webp" alt="technician" class="card-photo" />
-      </article>
-
-      <article data-aos="zoom-out" class="card">
-        <div class="card-icon">📏</div>
-        <h3>Calibration Service</h3>
-        <p>Precision calibration to keep measurements and outputs inside required tolerances.</p>
-        <img src="../Images/hp4.webp" alt="technician" class="card-photo" />
-        </article>
-    </div>
-  </section>
-
- <section class="section testimonials">
-    <div data-aos="fade-up" class="section-title">
-      <h2>What Our Client’s Say</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error</p>
-    </div>
-
-    <div class="testimonial-wrapper">
-      <!-- <button class="ts-arrow ts-arrow--left">&#10094;</button> -->
-
-      <div class="testimonial-cards">
-        <!-- Card 1 -->
-        <article data-aos="zoom-in" class="testimonial-card">
-          <div class="ts-header">
-            <div class="ts-user">
-              <img src="../Images/hp5.webp" alt="client 1">
-            </div>
-            <div class="ts-rating">
-              ★★★★★
-            </div>
-          </div>
-          <p class="ts-text">
-            Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
-            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-
-          <div class="ts-footer">
-            <h4>Oliver Greenwood</h4>
-            <span>Designer</span>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article data-aos="zoom-in" class="testimonial-card">
-          <div class="ts-header">
-            <div class="ts-user">
-              <img src="../Images/hp6.webp" alt="client 2">
-            </div>
-            <div class="ts-rating">
-              ★★★★★
-            </div>
-          </div>
-          <p class="ts-text">
-            Sed perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
-            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-
-          <div class="ts-footer">
-            <h4>Daisy Lana</h4>
-            <span>Designer</span>
-          </div>
-        </article>
-      </div>
-
-      <!-- <button class="ts-arrow ts-arrow--right">&#10095;</button> -->
-    </div>
-
-  
-  </section>
-
-  <!-- BLOG / NEWS -->
-  <section class="section blog">
-    <div data-aos="fade-up" class="section-title">
-      <h2>Latest News &amp; Blog</h2>
-      <p>Sed ut perspiciatis unde omnis iste natus error</p>
-    </div>
-
-    <div class="blog-grid">
-      <!-- Blog card 1 -->
-      <article data-aos="zoom-in" class="blog-card">
-        <div class="blog-img">
-          <img src="../Images/ts.webp" alt="blog 1">
-          <!-- <span class="badge badge-red">COVID-19</span> -->
+        <img class="top-img" src="../Images/hh.webp" alt="" />
+        <div data-aos="zoom-in" class="overlay">
+            <h1>HOME</h1>
+            <p class="breadcrumb"><span class="home-icon">🏠Home / <span>Home</span></span></p>
         </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="icon">📅</span>
-            <span>26 Sep 2020</span>
-          </div>
-          <h3>Mirage Deep Dive Under anding Timim Response</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
-          <a href="./error.html" class="blog-link">READ MORE +</a>
-        </div>
-      </article>
-
-      <!-- Blog card 2 -->
-      <article data-aos="zoom-in" class="blog-card">
-        <div class="blog-img">
-          <img src="../Images/bg2.webp" alt="blog 2">
-          <!-- <span class="badge badge-blue">SANITIZER</span> -->
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="icon">📅</span>
-            <span>26 Sep 2020</span>
-          </div>
-          <h3>How To Feel More Energe Even You’re Stuck</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
-          <a href="./error.html" class="blog-link">READ MORE +</a>
-        </div>
-      </article>
-
-      <!-- Blog card 3 -->
-      <article data-aos="zoom-in" class="blog-card">
-        <div class="blog-img">
-          <img src="../Images/bg1.webp" alt="blog 3">
-          <!-- <span class="badge badge-orange">MEDICAL</span> -->
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="icon">📅</span>
-            <span>26 Sep 2020</span>
-          </div>
-          <h3>Dolorem eum fugiat quo voluptas nulla pariatur</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium.</p>
-          <a href="./error.html" class="blog-link">READ MORE +</a>
-        </div>
-      </article>
     </div>
-  </section>
 
-      <footer class="ft-wrap" role="contentinfo">
-      <div class="ft-inner">
-        <!-- About / Subscribe -->
-        <div class="ft-col ft-about">
-          <h3 class="ft-title">About</h3>
-          <p class="ft-text">
-          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-          </p>
-
-          <form
-            class="ft-subscribe"
-            action="./Pages/error.html"
-            method="GET"
-            aria-label="Subscribe form"
-          >
-            <label class="sr-only" for="ft-email">Email Address</label>
-            <input
-              id="ft-email"
-              class="ft-input"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              required
-            />
-            <button class="ft-send" type="submit" aria-label="Subscribe">
-              ➜
-            </button>
-          </form>
-
-          <div class="ft-social">
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-telegram"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- Middle contact card -->
-        <div class="ft-col ft-contact">
-          <div class="contact-card">
-            <div class="contact-items">
-              <div class="ci">
-                <span class="ci-icon">🌐</span>
-                <div class="ci-text">
-                  <div class="ci-line">stackly@gmail.com</div>
-                  <div class="ci-sub">www.stackly.com</div>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container container">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="hero-badge">Medical Equipment Excellence</span>
+                <h1 class="hero-title">Prevent Issues. <span class="gradient-text">Protect Every Patient</span></h1>
+                <p class="hero-lead">Why Maintenance Matters - Regular medical equipment maintenance ensures accurate diagnostics, safe treatments, and uninterrupted patient care.</p>
+                <div class="hero-buttons">
+                    <a href="./error.html" class="btn-primary magnetic-btn" data-aos="zoom-in" data-aos-delay="200">View More →</a>
                 </div>
-              </div>
-
-              <div class="ci">
-                <span class="ci-icon">📍</span>
-                <div class="ci-text">
-                  <div class="ci-line">Chinna Thirupathi,Salem</div>
-                  <div class="ci-sub">Tamilnadu,India.</div>
-                </div>
-              </div>
-
-              <hr class="ci-divider" />
-
-              <div class="ci phone">
-                <span class="ci-icon circle">📞</span>
-                <div class="ci-text">
-                  <div class="ci-label">Emergency call</div>
-                  <div class="ci-phone">+91 78912 24567</div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+                <img src="../Images/hp1.webp" alt="Medical device maintenance" />
+            </div>
         </div>
+    </section>
 
-        <!-- Right column: Explore links + Map (replaced gallery) -->
-        <div class="ft-col ft-right">
-          <h3 class="ft-title">Quick Links</h3>
-          <ul class="ft-links">
-            <li><a href="./home2.html">Home</a></li>
-            <li><a href="./about2.html">About</a></li>
-            <li><a href="./service2.html">Service</a></li>
-            <li><a href="./blog2.html">Blog</a></li>
-            <li><a href="./contact2.html">Contact</a></li>
-            <li><a href="./dashboard2.html">Dashboard</a></li>
-          </ul>
+ <!-- FEATURED PRODUCTS WITH BUY BUTTONS -->
+<section class="products-section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Featured Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-media"><img src="../Images/e7.webp" alt="Medical Microscope" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>Medical Microscope</h3>
+                    <div class="price-group">
+                        <span class="price-old">£250.00</span>
+                        <span class="price-new">£190.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-media"><img src="../Images/e1.webp" alt="Celiosurgery Column" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>Celiosurgery Column</h3>
+                    <div class="price-group">
+                        <span class="price-new">£160.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-media"><img src="../Images/e8.webp" alt="Medical Thermometer" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>Medical Thermometer</h3>
+                    <div class="price-group">
+                        <span class="price-old">£30.00</span>
+                        <span class="price-new">£20.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-media"><img src="../Images/e2.webp" alt="Medical Endoscope" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>Medical Endoscope</h3>
+                    <div class="price-group">
+                        <span class="price-old">£1500.00</span>
+                        <span class="price-new">£900.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-media"><img src="../Images/e3.webp" alt="Endoscopy System" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>Endoscopy System</h3>
+                    <div class="price-group">
+                        <span class="price-old">£150.00</span>
+                        <span class="price-new">£90.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card tilt-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-media"><img src="../Images/e4.webp" alt="HD Laparoscopic" /></div>
+                <div class="card-body">
+                    <div class="card-actions">
+                        <a href="./error.html" class="action-btn" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+                        <a href="./error.html" class="action-btn" title="Quick View"><i class="fas fa-eye"></i></a>
+                    </div>
+                    <h3>HD Laparoscopic</h3>
+                    <div class="price-group">
+                        <span class="price-old">£1500.00</span>
+                        <span class="price-new">£700.00</span>
+                    </div>
+                    <a href="./error.html" class="buy-btn magnetic-btn">Buy Now →</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="ft-map" aria-hidden="false">
-        <!-- Replace the src with the map/location you want.
-               This is an embeddable Google Maps example for New York.
-               If you prefer another provider, replace the iframe accordingly. -->
-        <iframe
-          class="map1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-          width="100%"
-          height="150"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
-      </div>
+    </div>
+</section>
 
-      <!-- COPYRIGHT ROW -->
-      <div class="ft-copy">© 2025 All rights reserved.</div>
+<!-- SERVICES SECTION -->
+<section class="services-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Our Expertise</span>
+            <h2>Complete Medical <span class="gradient-text">Equipment Solutions</span></h2>
+            <p>From preventive maintenance to emergency repairs, we cover every aspect of medical device lifecycle management.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Equipment Repair</h3>
+                <p>24/7 emergency repairs for all medical devices with guaranteed 4-hour response time.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Same-day service</li>
+                    <li><i class="fas fa-check"></i> Certified technicians</li>
+                    <li><i class="fas fa-check"></i> OEM parts guaranteed</li>
+                </ul>
+                <a href="./error.html" class="service-btn">Learn More →</a>
+            </div>
+            <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3>Maintenance Contracts</h3>
+                <p>Customized annual contracts with priority service and 20% cost savings.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Unlimited visits</li>
+                    <li><i class="fas fa-check"></i> Priority response</li>
+                    <li><i class="fas fa-check"></i> Compliance reporting</li>
+                </ul>
+                <a href="./error.html" class="service-btn">Get Quote →</a>
+            </div>
+            <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Compliance Testing</h3>
+                <p>Full calibration and safety testing to meet JCI, NABH, and ISO standards.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Electrical safety</li>
+                    <li><i class="fas fa-check"></i> Performance verification</li>
+                    <li><i class="fas fa-check"></i> Certification documents</li>
+                </ul>
+                <a href="./error.html" class="service-btn">Book Testing →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- STATS COUNTER SECTION -->
+<section class="stats-section">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Hospitals Served</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-number" data-target="25000">0</div>
+                <div class="stat-label">Devices Repaired</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-number" data-target="99.8">0</div>
+                <div class="stat-label">% Uptime Guarantee</div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-number" data-target="24">0</div>
+                <div class="stat-label">Hour Response</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- WHY CHOOSE US SECTION -->
+<section class="choose-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Why Hospitals Choose Us</span>
+            <h2>Trusted by <span class="gradient-text">500+ Healthcare Facilities</span></h2>
+            <p>Industry-leading service with proven results and medical-grade reliability.</p>
+        </div>
+        <div class="choose-grid">
+            <div class="choose-image" data-aos="zoom-in">
+                <img src="../Images/hp1.webp" alt="Medical team working" />
+            </div>
+            <div class="choose-content" data-aos="fade-left">
+                <div class="choose-point">
+                    <div class="point-number">01</div>
+                    <h3>Factory-Trained Technicians</h3>
+                    <p>Our team holds certifications from GE, Philips, Siemens, and all major OEMs. 15+ years average experience.</p>
+                </div>
+                <div class="choose-point">
+                    <div class="point-number">02</div>
+                    <h3>99.8% First-Time Fix Rate</h3>
+                    <p>Advanced diagnostics ensure problems are solved correctly the first time - no repeat visits required.</p>
+                </div>
+                <div class="choose-point">
+                    <div class="point-number">03</div>
+                    <h3>24/7 Emergency Response</h3>
+                    <p>On-call technicians guarantee 4-hour response for critical equipment failures - any time, anywhere.</p>
+                </div>
+                <a href="./error.html" class="btn-primary magnetic-btn">Start Service →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- MAINTENANCE TYPES -->
+    <section class="types-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Maintenance Types</span>
+                <h2>Comprehensive Solutions for <span class="gradient-text">Device Reliability</span></h2>
+                <p>Explore essential maintenance types that ensure accuracy, safety, and extended equipment lifespan.</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card feature-card" data-aos="fade-right">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Preventive Maintenance</h3>
+                    <p>Routine scheduled service to prevent failures and maintain consistent device performance.</p>
+                    <img src="../Images/hp2.webp" alt="Preventive Maintenance" class="card-image" />
+                </div>
+                <div class="type-card feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Corrective Maintenance</h3>
+                    <p>Diagnosing and repairing problems to restore device function quickly and safely.</p>
+                    <img src="../Images/hp3.webp" alt="Corrective Maintenance" class="card-image" />
+                </div>
+                <div class="type-card feature-card" data-aos="fade-left" data-aos-delay="400">
+                    <div class="card-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <h3>Calibration Service</h3>
+                    <p>Precision calibration to keep measurements and outputs inside required tolerances.</p>
+                    <img src="../Images/hp4.webp" alt="Calibration Service" class="card-image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our<span class="gradient-text"> Clients Say</span></h2>
+                <p>Trusted by hospitals and clinics nationwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card tilt-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="ts-header">
+                        <div class="ts-avatar">
+                            <img src="../Images/hp5.webp" alt="Oliver Greenwood" />
+                        </div>
+                        <div class="ts-rating">★★★★★</div>
+                    </div>
+                    <p class="ts-text">Outstanding service! Our equipment uptime improved by 98% after their maintenance program.</p>
+                    <div class="ts-author">
+                        <h4>Oliver Greenwood</h4>
+                        <span>Hospital Administrator</span>
+                    </div>
+                </article>
+                <article class="testimonial-card tilt-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="ts-header">
+                        <div class="ts-avatar">
+                            <img src="../Images/hp6.webp" alt="Daisy Lana" />
+                        </div>
+                        <div class="ts-rating">★★★★★</div>
+                    </div>
+                    <p class="ts-text">Professional team with quick response times. Highly recommend for all medical equipment needs.</p>
+                    <div class="ts-author">
+                        <h4>Daisy Lana</h4>
+                        <span>Clinic Manager</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Latest<span class="gradient-text"> News & Insights</span></h2>
+                <p>Stay updated with medical equipment trends and maintenance tips</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="../Images/ts.webp" alt="Medical Insights" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sep 26, 2025</span>
+                        </div>
+                        <h3>Understanding Equipment Response Times</h3>
+                        <p>Critical insights into maintaining optimal performance under pressure.</p>
+                        <a href="./error.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="../Images/bg2.webp" alt="Energy Management" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sep 26, 2025</span>
+                        </div>
+                        <h3>Energy Efficiency in Medical Devices</h3>
+                        <p>Strategies to maintain energy levels during extended operations.</p>
+                        <a href="./error.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="../Images/bg1.webp" alt="Maintenance Best Practices" />
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sep 26, 2025</span>
+                        </div>
+                        <h3>Preventive Maintenance Best Practices</h3>
+                        <p>Proven strategies for maximizing equipment lifespan and reliability.</p>
+                        <a href="./error.html" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA (NEW) -->
+    <section class="cta-section">
+        <div class="cta-container container">
+            <div class="cta-content" data-aos="fade-up">
+                <span class="cta-badge">#1 Choice for 500+ Hospitals</span>
+                <h2>Ready to Protect Your<span class="gradient-text"> Critical Equipment?</span></h2>
+                <p>Get FREE equipment health assessment + instant quote in just 2 minutes</p>
+            </div>
+            <form class="cta-form" method="GET" action="./error.html" data-aos="zoom-in" data-aos-delay="200">
+                <input type="text" name="hospital" placeholder="Hospital/Clinic Name *" required maxlength="50">
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Phone Number *" required pattern="[0-9]{10}">
+                    <input type="email" name="email" placeholder="Email Address *" required>
+                </div>
+                <button type="submit" class="btn-primary magnetic-btn">Get Free Quote Now →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER (UNCHANGED) -->
+    <footer class="ft-wrap" role="contentinfo">
+        <div class="ft-inner">
+            <div class="ft-col ft-about">
+                <h3 class="ft-title">About</h3>
+                <p class="ft-text">But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
+                <form class="ft-subscribe" action="./Pages/error.html" method="GET">
+                    <label class="sr-only" for="ft-email">Email Address</label>
+                    <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required />
+                    <button class="ft-send" type="submit">➜</button>
+                </form>
+                <div class="ft-social">
+                    <a href="./error.html" class="s"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="ft-col ft-contact">
+                <div class="contact-card">
+                    <div class="contact-items">
+                        <div class="ci">
+                            <span class="ci-icon">🌐</span>
+                            <div class="ci-text">
+                                <div class="ci-line">stackly@gmail.com</div>
+                                <div class="ci-sub">www.stackly.com</div>
+                            </div>
+                        </div>
+                        <div class="ci">
+                            <span class="ci-icon">📍</span>
+                            <div class="ci-text">
+                                <div class="ci-line">Chinna Thirupathi,Salem</div>
+                                <div class="ci-sub">Tamilnadu,India.</div>
+                            </div>
+                        </div>
+                        <hr class="ci-divider" />
+                        <div class="ci phone">
+                            <span class="ci-icon circle">📞</span>
+                            <div class="ci-text">
+                                <div class="ci-label">Emergency call</div>
+                                <div class="ci-phone">+91 78912 24567</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-col ft-right">
+                <h3 class="ft-title">Quick Links</h3>
+                <ul class="ft-links">
+                    <li><a href="./home2.html">Home</a></li>
+                    <li><a href="./about2.html">About</a></li>
+                    <li><a href="./service2.html">Service</a></li>
+                    <li><a href="./blog2.html">Blog</a></li>
+                    <li><a href="./contact2.html">Contact</a></li>
+                    <li><a href="./dashboard2.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-map">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin" width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="ft-copy">© 2025 All rights reserved.</div>
     </footer>
 
-
-
-       <script>
-      // $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 650,
-        once: false,
-        mirror: true,
-      });
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100
+        });
     </script>
+    <script>
+let stats = document.querySelectorAll('.stat-number');
+const animateStats = () => {
+    stats.forEach(stat => {
+        const target = parseFloat(stat.getAttribute('data-target'));
+        const count = +stat.innerText.replace(/[^0-9.]/g, '');
+        const speed = target > 1000 ? 50 : 200;
+        const inc = target / speed;
+        if (count < target) {
+            stat.innerText = Math.ceil(count + inc) + (target === 99.8 ? '%' : '+');
+            setTimeout(animateStats, 30);
+        } else {
+            stat.innerText = target + (target === 99.8 ? '%' : '+');
+        }
+    });
+};
+window.addEventListener('scroll', () => {
+    if (window.scrollY > window.innerHeight * 0.8) animateStats();
+});
+</script>
 
 </body>
 </html>

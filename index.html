@@ -3,560 +3,508 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stackly</title>
+    <title>Stackly - Precision Medical Equipment</title>
     <link rel="stylesheet" href="./style.css">
-       <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
-       <div class="mb">
-      <div class="mb-main">
-        <div class="menu-btn">
-          <svg
-            onclick="menu.hidden^=1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-            height="24"
-            width="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
-
-          <div hidden id="menu">
-            <ul class="menu-list">
-              <li>
-                <a style="color: #1bc900" href="./index.html">Home</a>
-                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
-                <div id="menu2" hidden>
-                  <a href="./Pages/home2.html">Home2</a>
+    <!-- YOUR ORIGINAL NAV (UNCHANGED) -->
+    <div class="mb">
+        <div class="mb-main">
+            <div class="menu-btn">
+                <svg onclick="menu.hidden^=1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" height="24" width="24">
+                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/>
+                </svg>
+                <div hidden id="menu">
+                    <ul class="menu-list">
+                        <li><a style="color: #1bc900" href="./index.html">Home</a><i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i><div id="menu2" hidden><a href="./Pages/home2.html">Home2</a></div></li>
+                        <li><a href="./Pages/about.html">About</a></li>
+                        <li><a href="./Pages/service.html">Service</a></li>
+                        <li><a href="./Pages/blog.html">Blogs</a></li>
+                        <li><a href="./Pages/contact.html">Contact</a></li>
+                        <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+                    </ul>
                 </div>
-              </li>
-              <li><a href="./Pages/about.html">About</a></li>
-              <li><a href="./Pages/service.html">Service</a></li>
-              <li><a href="./Pages/blog.html">Blogs</a></li>
-              <li><a href="./Pages/contact.html">Contact</a></li>
-              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-            </ul>
-          </div>
+            </div>
+            <div class="mb-logo">
+                <a href="./index.html" style="display: flex; align-items: center"><img src="./Images/logo.webp" alt=""/></a>
+                <a class="login2" href="./Pages/login.html"><i class="fa-solid fa-user"></i>Log in</a>
+            </div>
         </div>
-        <div class="mb-logo">
-          <a href="./index.html" style="display: flex; align-items: center">
-            <img src="./Images/logo.webp" alt="" />
-          </a>
-          <a class="login2" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
-        </div>
-      </div>
     </div>
     <nav id="nav">
-      <div class="main-menu">
-        <a href="./index.html" style="display: flex; align-items: center">
-          <img src="./Images/logo.webp" alt="" />
-        </a>
-        <div class="menu-child">
-          <ul class="menu-list2">
-            <div style="position: relative">
-              <li>
-                <a style="color: #3bb105" href="./index.html">Home</a
-                ><i
-                  onclick="menu3.hidden^=1"
-                  class="fa-solid fa-caret-down"
-                ></i>
-                <div
-                  style="position: absolute; top: 25px; background-color: white"
-                >
-                  <a
-                    href="./Pages/home2.html"
-                    style="
-                      background-color: white;
-                      border: 1px solid black;
-                      padding: 4px;
-                    "
-                    id="menu3"
-                    hidden
-                    >Home2</a
-                  >
-                </div>
-              </li>
+        <div class="main-menu">
+            <a href="./index.html" style="display: flex; align-items: center"><img src="./Images/logo.webp" alt=""/></a>
+            <div class="menu-child">
+                <ul class="menu-list2">
+                    <div style="position: relative">
+                        <li><a style="color: #3bb105" href="./index.html">Home</a><i onclick="menu3.hidden^=1" class="fa-solid fa-caret-down"></i>
+                            <div style="position: absolute; top: 25px; background-color: white"><a href="./Pages/home2.html" style="background-color: white; border: 1px solid black; padding: 4px;" id="menu3" hidden>Home2</a></div>
+                        </li>
+                    </div>
+                    <li><a href="./Pages/about.html">About</a></li>
+                    <li><a href="./Pages/service.html">Service</a></li>
+                    <li><a href="./Pages/blog.html">Blog</a></li>
+                    <li><a href="./Pages/contact.html">Contact</a></li>
+                    <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+                </ul>
+                <a class="login" href="./Pages/login.html"><i class="fa-solid fa-user"></i>Log in</a>
             </div>
-            <li><a href="./Pages/about.html">About</a></li>
-            <li><a href="./Pages/service.html">Service</a></li>
-            <li><a href="./Pages/blog.html">Blog</a></li>
-            <li><a href="./Pages/contact.html">Contact</a></li>
-            <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-          </ul>
-
-          <a class="login" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
         </div>
-      </div>
     </nav>
-      <section class="hero-wrapper">
-    <div class="hero-grid">
-
-      <div data-aos="zoom-in" class="hero-textbox">
-        <span class="tag-label">#1 Innovative Equipment</span>
-
-        <h1 class="main-heading">
-          Precision Tools for Better Health and<br>
-          Care Solutions
-        </h1>
-
-        <p class="sub-desc">
-          Empowering medical professionals with reliable, innovative equipment to enhance
-          diagnostics, treatment accuracy, and patient care quality.
-        </p>
-
-        <div class="cta-row">
-          <a href="./Pages/about.html" class="cta-main">Get Started Now →</a>
-          <a href="./Pages/service.html" class="cta-alt">Learn More</a>
-        </div>
-
-        <ul class="benefits-list">
-          <li>Prolongs Equipment Lifespan</li>
-          <li>Enhances Performance Accuracy</li>
-          <li>Reduces Risk of Downtime</li>
-        </ul>
-      </div>
-
-      <div class="hero-visual">
-        <img data-aos="zoom-in" src="./Images/thumb-350-1330529.webp" class="visual-img" alt="Medical equipment">
-      </div>
-
-    </div>
-  </section>
 
 
-  <!-- <img src="/mnt/data/Screenshot 2025-11-24 125936.png" alt="" aria-hidden="true" style="display:none;"> -->
-
-  <main class="page-wrap">
-    <section class="cards-area">
-      <article data-aos="zoom-out" class="card">
-        <div class="card-icon">
-          <!-- simple icon circle; replace with <img> if you have real icon files -->
-          <!-- <svg viewBox="0 0 48 48" class="icon-svg" aria-hidden="true" focusable="false">
-            <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#6fc8ff"/><stop offset="1" stop-color="#3aa7ff"/></linearGradient></defs>
-            <circle cx="24" cy="24" r="22" fill="url(#g1)"/>
-            <path d="M18 20c2-3 8-3 10 0v10" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <path d="M20 26h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round" />
-          </svg> -->
-        </div>
-
-        <h3 class="card-title">10+ Years of Experience</h3>
-        <p class="card-text">
-          A decade of trusted service in supplying and supporting medical institutions nationwide. From clinics to hospitals, we’ve equipped hundreds of facilities with advanced medical tools.
-        </p>
-        <a class="card-link" href="./Pages/service.html">Learn More</a>
-      </article>
-
-      <article data-aos="zoom-out" class="card">
-        <!-- <div class="card-icon">
-          <svg viewBox="0 0 48 48" class="icon-svg" aria-hidden="true">
-            <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#6fc8ff"/><stop offset="1" stop-color="#3aa7ff"/></linearGradient></defs>
-            <circle cx="24" cy="24" r="22" fill="url(#g2)"/>
-            <path d="M20 18v12" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-            <path d="M26 20v8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-            <circle cx="20" cy="18" r="1.8" fill="#fff"/>
-          </svg>
-        </div> -->
-
-        <h3 class="card-title">500+ Devices Installed</h3>
-        <p class="card-text">
-          A decade of trusted service in supplying and supporting medical institutions nationwide. From clinics to hospitals, we’ve equipped hundreds of facilities with advanced medical tools.
-        </p>
-        <a class="card-link" href="./Pages/service.html">Learn More</a>
-      </article>
-
-      <article data-aos="zoom-out" class="card">
-        <!-- <div class="card-icon">
-          <svg viewBox="0 0 48 48" class="icon-svg" aria-hidden="true">
-            <defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#6fc8ff"/><stop offset="1" stop-color="#3aa7ff"/></linearGradient></defs>
-            <circle cx="24" cy="24" r="22" fill="url(#g3)"/>
-            <path d="M16 22h16M16 28h14" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
-            <rect x="18" y="14" width="12" height="6" rx="1.6" fill="none" stroke="#fff" stroke-width="2"/>
-          </svg>
-        </div> -->
-
-        <h3 class="card-title">24/7 Technical Support</h3>
-        <p class="card-text">
-          A decade of trusted service in supplying and supporting medical institutions nationwide. From clinics to hospitals, we’ve equipped hundreds of facilities with advanced medical tools.
-        </p>
-        <a class="card-link" href="./Pages/service.html">Learn More</a>
-      </article>
-    </section>
-  </main>
-
-<main class="svc-hero">
-    <div class="svc-inner">
-      <header class="svc-head">
-        <p data-aos="fade-up" class="svc-kicker">Our Service</p>
-        <h1 data-aos="fade-up" class="svc-title">
-          Reliable Medical Solutions Tailored<br>for Every Need
-        </h1>
-        <p  data-aos="fade-up" class="svc-desc">
-          Delivering quality equipment and expert support to advance healthcare safety, precision, and efficiency.
-        </p>
-      </header>
-
-      <section class="svc-media" aria-hidden="false">
-        <div class="media-wrap">
-          <!-- large rounded media image (uses your uploaded path) -->
-          <img data-aos="zoom-out" class="media-img" src="./Images/h2.webp" alt="Medical equipment and technician">
-         
-    
-        </div>
-      </section>
-    </div>
-  </main>
-
-
- <!-- <img src="/mnt/data/Screenshot 2025-11-24 130017.png" alt="" aria-hidden="true" style="display:none;"> -->
-
-  <main class="kb-section">
-    <header class="kb-header">
-      <p data-aos="fade-up" class="kb-kicker">Key Benefits</p>
-      <h1 data-aos="fade-up" class="kb-title">Maximize Uptime, Accuracy, and<br>Equipment Lifespan</h1>
-      <p data-aos="fade-up" class="kb-sub">Discover how regular maintenance enhances performance, safety, and long-term healthcare efficiency.</p>
-    </header>
-
-    <section class="kb-grid" aria-label="Key benefits list">
-      <article data-aos="zoom-in" class="kb-card kb-card--featured" aria-labelledby="kb1-title">
-        <div class="kb-number">01</div>
-        <h3 id="kb1-title" class="kb-card-title">Improved Equipment Reliability</h3>
-        <p class="kb-card-body">
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-        </p>
-      </article>
-
-      <article data-aos="zoom-in" class="kb-card" aria-labelledby="kb2-title">
-        <div class="kb-number">02</div>
-        <h3 id="kb2-title" class="kb-card-title">Enhanced Patient Safety</h3>
-        <p class="kb-card-body">
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-        </p>
-      </article>
-
-      <article data-aos="zoom-in" class="kb-card" aria-labelledby="kb3-title">
-        <div class="kb-number">03</div>
-        <h3 id="kb3-title" class="kb-card-title">Enhanced Patient Safety</h3>
-        <p class="kb-card-body">
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-        </p>
-      </article>
-
-      <article data-aos="zoom-in" class="kb-card" aria-labelledby="kb4-title">
-        <div class="kb-number">04</div>
-        <h3 id="kb4-title" class="kb-card-title">Extended Equipment Lifespan</h3>
-        <p class="kb-card-body">
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-        </p>
-      </article>
-
-      <article data-aos="zoom-in" class="kb-card" aria-labelledby="kb5-title">
-        <div class="kb-number">05</div>
-        <h3 id="kb5-title" class="kb-card-title">Extended Equipment Lifespan</h3>
-        <p class="kb-card-body">
-          Regular maintenance significantly reduces the risk of unexpected equipment failure during critical medical procedures by ensuring that all components function optimally, minimizing interruptions, and enhancing overall operational readiness in high-pressure, time-sensitive healthcare environments.
-        </p>
-      </article>
-    </section>
-  </main>
-
-
-
-   <!-- <img src="/mnt/data/Screenshot 2025-11-24 130045.png" alt="" aria-hidden="true" style="display:none;"> -->
-
-  <main class="page">
-    <header class="page-head">
-      <p data-aos="fade-up" class="kicker">Common Issues We Fix</p>
-      <h1 data-aos="fade-up" class="title">Fixing Failures That Disrupt<br>Critical Medical Care</h1>
-      <p data-aos="fade-up" class="lede">We diagnose and resolve common equipment issues quickly to restore safety and performance.</p>
-    </header>
-
-    <section class="issues-grid" aria-label="Common equipment issues">
-      <!-- left column (two cards stacked) -->
-      <div class="col col-left">
-        <article data-aos="zoom-in" class="issue-card">
-          <div class="icon-circle" aria-hidden="true">
-            <!-- simple icon - replace with <img> if needed -->
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="11" stroke="white" stroke-width="0.5" fill="none"></circle>
-              <path d="M8 13h8" stroke="white" stroke-width="1.4" stroke-linecap="round"></path>
-            </svg>
-          </div>
-          <h3 class="card-title">Power Supply Failures</h3>
-          <p class="card-body">Loss of function due to damaged cables, unstable voltage, or internal power faults. Inaccurate readings caused by worn-out or misaligned sensors in monitoring devices.</p>
-        </article>
-
-        <article data-aos="zoom-in" class="issue-card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="11" stroke="white" stroke-width="0.5" fill="none"></circle>
-              <path d="M7 12h10" stroke="white" stroke-width="1.4" stroke-linecap="round"></path>
-            </svg>
-          </div>
-          <h3 class="card-title">Sensor Malfunctions</h3>
-          <p class="card-body">Loss of function due to damaged cables, unstable voltage, or internal power faults. Inaccurate readings caused by worn-out or misaligned sensors in monitoring devices.</p>
-        </article>
-      </div>
-
-      <!-- center column (big image) -->
-      <div data-aos="zoom-out" class="col col-center">
-        <div class="hero-image-wrap">
-          <img class="hero-image" src="./Images/h3.webp" alt="Technician working on equipment">
-        </div>
-      </div>
-
-      <!-- right column (two cards stacked) -->
-      <div class="col col-right">
-        <article data-aos="zoom-in" class="issue-card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="11" stroke="white" stroke-width="0.5" fill="none"></circle>
-              <path d="M9 8l6 8" stroke="white" stroke-width="1.4" stroke-linecap="round"></path>
-            </svg>
-          </div>
-          <h3 class="card-title">Display or Interface Errors</h3>
-          <p class="card-body">Loss of function due to damaged cables, unstable voltage, or internal power faults. Inaccurate readings caused by worn-out or misaligned sensors in monitoring devices.</p>
-        </article>
-
-        <article data-aos="zoom-in" class="issue-card">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="11" stroke="white" stroke-width="0.5" fill="none"></circle>
-              <rect x="8" y="8" width="8" height="8" rx="1" stroke="white" stroke-width="1" fill="none"></rect>
-            </svg>
-          </div>
-          <h3 class="card-title">Fluid Leakage in Pumps</h3>
-          <p class="card-body">Loss of function due to damaged cables, unstable voltage, or internal power faults. Inaccurate readings caused by worn-out or misaligned sensors in monitoring devices.</p>
-        </article>
-      </div>
-    </section>
-  </main>
- <main class="blog-wrap">
-    <header class="blog-head">
-      <p data-aos="fade-up" class="blog-kicker">Our Blog</p>
-      <h1 data-aos="fade-up" class="blog-title">Insights That Power Smarter<br>Medical Equipment Decisions</h1>
-      <p data-aos="fade-up" class="blog-sub">Explore trends, tips, and updates shaping the future of medical devices and healthcare innovation.</p>
-    </header>
-
-    <section class="cards-row" aria-label="Latest posts">
-      <!-- Card 1 -->
-      <article data-aos="zoom-in" class="post-card" aria-labelledby="post1">
-        <div data-aos="zoom-out" class="card-media" style="background-image: url('./Images/h7.webp');"></div>
-
-        <div data-aos="fade-up" class="card-overlay">
-          <span class="badge">INDUSTRY INSIGHTS</span>
-          <h3 id="post1" class="post-title">How Preventive Maintenance Reduces Risk and Extends Equipment Life in Hospitals</h3>
-
-          <div class="meta-row">
-            <span class="meta-item">👤 KIT-ADMIN</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">📅 JULY 28, 2025</span>
-          </div>
-
-          <a class="read-more" href="./Pages/blog.html">READ MORE <span class="plus">+</span></a>
-
-       
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article data-aos="zoom-in" class="post-card" aria-labelledby="post2">
-        <div data-aos="zoom-out" class="card-media" style="background-image: url('./Images/h6.webp');"></div>
-
-        <div data-aos="fade-up" class="card-overlay">
-          <span class="badge">INDUSTRY INSIGHTS</span>
-          <h3 id="post2" class="post-title">How Preventive Maintenance Reduces Risk and Extends Equipment Life in Hospitals</h3>
-
-          <div class="meta-row">
-            <span class="meta-item">👤 KIT-ADMIN</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">📅 JULY 28, 2025</span>
-          </div>
-
-          <a class="read-more" href="./Pages/blog.html">READ MORE <span class="plus">+</span></a>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article data-aos="zoom-in" class="post-card" aria-labelledby="post3">
-        <div data-aos="zoom-out" class="card-media" style="background-image: url('./Images/h5.webp');"></div>
-
-        <div data-aos="fade-up" class="card-overlay">
-          <span class="badge">INDUSTRY INSIGHTS</span>
-          <h3 id="post3" class="post-title">How Preventive Maintenance Reduces Risk and Extends Equipment Life in Hospitals</h3>
-
-          <div class="meta-row">
-            <span class="meta-item">👤 KIT-ADMIN</span>
-            <span class="meta-sep">/</span>
-            <span class="meta-item">📅 JULY 28, 2025</span>
-          </div>
-
-          <a class="read-more" href="./Pages/blog.html">READ MORE <span class="plus">+</span></a>
-
-        
-        </div>
-      </article>
-    </section>
-  </main>
-
-
-
-
-    <footer class="ft-wrap" role="contentinfo">
-      <div class="ft-inner">
-        <!-- About / Subscribe -->
-        <div class="ft-col ft-about">
-          <h3 class="ft-title">About</h3>
-          <p class="ft-text">
-          But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-          </p>
-
-          <form
-            class="ft-subscribe"
-            action="./Pages/error.html"
-            method="GET"
-            aria-label="Subscribe form"
-          >
-            <label class="sr-only" for="ft-email">Email Address</label>
-            <input
-              id="ft-email"
-              class="ft-input"
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              required
-            />
-            <button class="ft-send" type="submit" aria-label="Subscribe">
-              ➜
-            </button>
-          </form>
-
-          <div class="ft-social">
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="./error.html" class="s">
-              <i class="fa-brands fa-telegram"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- Middle contact card -->
-        <div class="ft-col ft-contact">
-          <div class="contact-card">
-            <div class="contact-items">
-              <div class="ci">
-                <span class="ci-icon">🌐</span>
-                <div class="ci-text">
-                  <div class="ci-line">stackly@gmail.com</div>
-                  <div class="ci-sub">www.stackly.com</div>
+    <!-- MODERN HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <span class="hero-badge">#1 Innovative Equipment</span>
+                <h1 class="hero-title">Precision Tools for Better Health<span class="gradient-text"> & Care</span><br>Solutions</h1>
+                <p class="hero-desc">Empowering medical professionals with reliable, innovative equipment to enhance diagnostics, treatment accuracy, and patient care quality.</p>
+                <div class="hero-cta">
+                    <a href="./Pages/error.html" class="btn-primary">Get Started Now →</a>
+                    <a href="./Pages/error.html" class="btn-secondary">Learn More</a>
                 </div>
-              </div>
-
-              <div class="ci">
-                <span class="ci-icon">📍</span>
-                <div class="ci-text">
-                  <div class="ci-line">Chinna Thirupathi,Salem</div>
-                  <div class="ci-sub">Tamilnadu,India.</div>
-                </div>
-              </div>
-
-              <hr class="ci-divider" />
-
-              <div class="ci phone">
-                <span class="ci-icon circle">📞</span>
-                <div class="ci-text">
-                  <div class="ci-label">Emergency call</div>
-                  <div class="ci-phone">+91 78912 24567</div>
-                </div>
-              </div>
+                <ul class="hero-features">
+                    <li><i class="icon-check"></i>Prolongs Equipment Lifespan</li>
+                    <li><i class="icon-check"></i>Enhances Performance Accuracy</li>
+                    <li><i class="icon-check"></i>Reduces Risk of Downtime</li>
+                </ul>
             </div>
-          </div>
+            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
+                <img src="./Images/thumb-350-1330529.webp" alt="Medical equipment" class="hero-img">
+                <div class="hero-glow"></div>
+            </div>
         </div>
+    </section>
 
-        <!-- Right column: Explore links + Map (replaced gallery) -->
-        <div class="ft-col ft-right">
-          <h3 class="ft-title">Quick Links</h3>
-          <ul class="ft-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./Pages/about.html">About</a></li>
-            <li><a href="./Pages/service.html">Service</a></li>
-            <li><a href="./Pages/blog.html">Blog</a></li>
-            <li><a href="./Pages/contact.html">Contact</a></li>
-            <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-          </ul>
+    <!-- HERO STATS SECTION - NO VIDEO -->
+<section class="hero-stats section-anim">
+    <div class="container">
+        <div class="stats-hero-grid">
+            <div class="stat-hero-item">
+                <div class="stat-hero-number">500+</div>
+                <div class="stat-hero-label">Hospitals Served</div>
+            </div>
+            <div class="stat-hero-item">
+                <div class="stat-hero-number">25K+</div>
+                <div class="stat-hero-label">Equipment Fixed</div>
+            </div>
+            <div class="stat-hero-item">
+                <div class="stat-hero-number">98%</div>
+                <div class="stat-hero-label">Success Rate</div>
+            </div>
+            <div class="stat-hero-item">
+                <div class="stat-hero-number">24/7</div>
+                <div class="stat-hero-label">Support</div>
+            </div>
         </div>
-      </div>
-      <div class="ft-map" aria-hidden="false">
-        <!-- Replace the src with the map/location you want.
-               This is an embeddable Google Maps example for New York.
-               If you prefer another provider, replace the iframe accordingly. -->
-        <iframe
-          class="map1"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-          width="100%"
-          height="150"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        >
-        </iframe>
-      </div>
+    </div>
+</section>
+<!-- TRUST SECTION -->
+<section class="trust-section section-anim">
+    <div class="container">
+        <div class="trust-grid">
+            <div class="trust-item tilt-card">
+                <div class="trust-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>#1 Medical Service</h3>
+                <p>Awarded best equipment maintenance provider 2024</p>
+            </div>
+            <div class="trust-item tilt-card">
+                <div class="trust-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>2hr Response</h3>
+                <p>Emergency service anywhere in India</p>
+            </div>
+            <div class="trust-item tilt-card">
+                <div class="trust-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>100% Certified</h3>
+                <p>All technicians ISO & NABH certified</p>
+            </div>
+            <div class="trust-item tilt-card">
+                <div class="trust-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>500+ Experts</h3>
+                <p>Trained specialists nationwide</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- QUICK SERVICES -->
+<section class="quick-services section-anim">
+    <div class="container">
+        <div class="services-header">
+            <h2>One-Click Solutions<span class="gradient-text"> Available</span></h2>
+            <p>Choose your service and get instant quote</p>
+        </div>
+        <div class="quick-grid">
+            <a href="./Pages/error.html" class="quick-card tilt-card">
+                <div class="quick-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Diagnostics</h3>
+                <span>₹2,999 starting</span>
+            </a>
+            <a href="./Pages/error.html" class="quick-card tilt-card">
+                <div class="quick-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Repair</h3>
+                <span>₹4,999 starting</span>
+            </a>
+            <a href="./Pages/error.html" class="quick-card tilt-card">
+                <div class="quick-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Maintenance</h3>
+                <span>₹9,999 starting</span>
+            </a>
+        </div>
+    </div>
+</section>
 
-      <!-- COPYRIGHT ROW -->
-      <div class="ft-copy">© 2025 All rights reserved.</div>
+    <!-- STATS SECTION -->
+    <section class="stats-section" data-aos="fade-up">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="stat-number" data-target="10">0</div>
+                    <h3>+ Years Experience</h3>
+                    <p>A decade of trusted service equipping hundreds of medical facilities nationwide.</p>
+                </div>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="stat-number" data-target="500">0</div>
+                    <h3>+ Devices Installed</h3>
+                    <p>Comprehensive installation with 98% uptime guarantee across all units.</p>
+                </div>
+                <div class="stat-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="stat-number" data-target="24">0</div>
+                    <h3>24/7 Support</h3>
+                    <p>Emergency response within 2 hours, anywhere in India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Our Service</span>
+                <h2>Reliable Medical Solutions<span class="gradient-text"> Tailored</span><br>For Every Need</h2>
+                <p>Delivering quality equipment and expert support to advance healthcare safety, precision, and efficiency.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card modern" data-aos="fade-up" data-aos-delay="100">
+                    <img src="./Images/h2.webp" alt="Medical equipment" class="service-img">
+                </div>
+                <div class="service-content" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Advanced Diagnostics</h3>
+                    <p>State-of-the-art imaging and monitoring systems with AI-powered accuracy.</p>
+                    <a href="./Pages/error.html" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Key Benefits</span>
+                <h2>Maximize Uptime, Accuracy,<br><span class="gradient-text">Equipment Lifespan</span></h2>
+                <p>Discover how regular maintenance enhances performance, safety, and long-term healthcare efficiency.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="benefit-number">01</div>
+                    <h3>Improved Reliability</h3>
+                    <p>Reduces unexpected failures during critical procedures by ensuring optimal component function.</p>
+                </div>
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="benefit-number">02</div>
+                    <h3>Patient Safety</h3>
+                    <p>Eliminates risks from malfunctioning equipment in high-pressure healthcare environments.</p>
+                </div>
+                <div class="benefit-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="benefit-number">03</div>
+                    <h3>Extended Lifespan</h3>
+                    <p>Prolongs equipment life by 40% through proactive maintenance and component optimization.</p>
+                </div>
+                <div class="benefit-card featured" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="benefit-number">04</div>
+                    <h3>Cost Efficiency</h3>
+                    <p>Reduces total ownership costs by minimizing downtime and emergency repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ISSUES SECTION -->
+    <section class="issues-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Common Issues</span>
+                <h2>Fixing Failures That Disrupt<span class="gradient-text"> Critical Care</span></h2>
+                <p>We diagnose and resolve equipment issues quickly to restore safety and performance.</p>
+            </div>
+            <div class="issues-layout">
+                <div class="issues-left" data-aos="fade-right">
+                    <div class="issue-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="issue-icon"><i class="fas fa-plug"></i></div>
+                        <h3>Power Supply</h3>
+                        <p>Damaged cables, unstable voltage, or internal power faults.</p>
+                    </div>
+                    <div class="issue-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="issue-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Sensor Issues</h3>
+                        <p>Worn-out or misaligned sensors causing inaccurate readings.</p>
+                    </div>
+                </div>
+                <div class="issues-center" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./Images/h3.webp" alt="Technician" class="issues-img">
+                </div>
+                <div class="issues-right" data-aos="fade-left">
+                    <div class="issue-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="issue-icon"><i class="fas fa-tv"></i></div>
+                        <h3>Display Errors</h3>
+                        <p>Interface failures and screen display malfunctions.</p>
+                    </div>
+                    <div class="issue-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="issue-icon"><i class="fas fa-tint"></i></div>
+                        <h3>Fluid Leaks</h3>
+                        <p>Pump seal failures and fluid system contamination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Latest Insights</span>
+                <h2>Insights That Power Smarter<span class="gradient-text"> Equipment Decisions</span></h2>
+                <p>Explore trends, tips, and updates shaping the future of medical devices.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image" style="background-image: url('./Images/h7.webp');"></div>
+                    <div class="blog-content">
+                        <span class="blog-badge">INDUSTRY INSIGHTS</span>
+                        <h3>Preventive Maintenance Reduces Hospital Risk</h3>
+                        <div class="blog-meta">
+                            <span>👤 KIT-ADMIN</span>
+                            <span class="meta-sep">/</span>
+                            <span>📅 JUL 28, 2025</span>
+                        </div>
+                        <a href="./Pages/error.html" class="blog-link">READ MORE <span>+</span></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image" style="background-image: url('./Images/h6.webp');"></div>
+                    <div class="blog-content">
+                        <span class="blog-badge">INDUSTRY INSIGHTS</span>
+                        <h3>Equipment Life Extension Strategies</h3>
+                        <div class="blog-meta">
+                            <span>👤 KIT-ADMIN</span>
+                            <span class="meta-sep">/</span>
+                            <span>📅 JUL 28, 2025</span>
+                        </div>
+                        <a href="./Pages/error.html" class="blog-link">READ MORE <span>+</span></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image" style="background-image: url('./Images/h5.webp');"></div>
+                    <div class="blog-content">
+                        <span class="blog-badge">INDUSTRY INSIGHTS</span>
+                        <h3>Future of Medical Device Maintenance</h3>
+                        <div class="blog-meta">
+                            <span>👤 KIT-ADMIN</span>
+                            <span class="meta-sep">/</span>
+                            <span>📅 JUL 28, 2025</span>
+                        </div>
+                        <a href="./Pages/error.html" class="blog-link">READ MORE <span>+</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERS SECTION - BEFORE FAQ -->
+<section class="partners-section section-anim">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge">Trusted Partners</span>
+            <h2>Certified by Industry<span class="gradient-text"> Leaders</span></h2>
+            <p>Officially authorized service partner for India's top medical equipment brands</p>
+        </div>
+        
+        <div class="partners-grid">
+            <!-- LOGO CARDS -->
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <h3>Apollo Hospitals</h3>
+                <p>Exclusive service partner</p>
+            </div>
+            
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-clinic-medical"></i>
+                </div>
+                <h3>Fortis Healthcare</h3>
+                <p>Preferred maintenance</p>
+            </div>
+            
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-hdd"></i>
+                </div>
+                <h3>GE Healthcare</h3>
+                <p>Authorized service</p>
+            </div>
+            
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Philips</h3>
+                <p>Certified partner</p>
+            </div>
+            
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>ISO 9001</h3>
+                <p>Quality certified</p>
+            </div>
+            
+            <div class="partner-card tilt-card">
+                <div class="partner-logo">
+                    <i class="fas fa-medkit"></i>
+                </div>
+                <h3>NABH</h3>
+                <p>Accredited service</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- YOUR ORIGINAL FOOTER (UNCHANGED) -->
+    <footer class="ft-wrap" role="contentinfo">
+        <div class="ft-inner">
+            <div class="ft-col ft-about">
+                <h3 class="ft-title">About</h3>
+                <p class="ft-text">But must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born</p>
+                <form class="ft-subscribe" action="./Pages/error.html" method="GET" aria-label="Subscribe form">
+                    <label class="sr-only" for="ft-email">Email Address</label>
+                    <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required/>
+                    <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
+                </form>
+                <div class="ft-social">
+                    <a href="./error.html" class="s"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="./error.html" class="s"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="ft-col ft-contact">
+                <div class="contact-card">
+                    <div class="contact-items">
+                        <div class="ci">
+                            <span class="ci-icon">🌐</span>
+                            <div class="ci-text">
+                                <div class="ci-line">stackly@gmail.com</div>
+                                <div class="ci-sub">www.stackly.com</div>
+                            </div>
+                        </div>
+                        <div class="ci">
+                            <span class="ci-icon">📍</span>
+                            <div class="ci-text">
+                                <div class="ci-line">Chinna Thirupathi,Salem</div>
+                                <div class="ci-sub">Tamilnadu,India.</div>
+                            </div>
+                        </div>
+                        <hr class="ci-divider"/>
+                        <div class="ci phone">
+                            <span class="ci-icon circle">📞</span>
+                            <div class="ci-text">
+                                <div class="ci-label">Emergency call</div>
+                                <div class="ci-phone">+91 78912 24567</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-col ft-right">
+                <h3 class="ft-title">Quick Links</h3>
+                <ul class="ft-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Pages/about.html">About</a></li>
+                    <li><a href="./Pages/service.html">Service</a></li>
+                    <li><a href="./Pages/blog.html">Blog</a></li>
+                    <li><a href="./Pages/contact.html">Contact</a></li>
+                    <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-map" aria-hidden="false">
+            <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin" width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="ft-copy">© 2025 All rights reserved.</div>
     </footer>
 
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            mirror: true,
+            offset: 100
+        });
 
+        // Stats counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number[data-target]');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
 
-
-
-
-
-
-       <script>
-      // $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 650,
-        once: false,
-        mirror: true,
-      });
+        // Intersection Observer for stats
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+        statsObserver.observe(document.querySelector('.stats-section'));
     </script>
 </body>
 </html>
