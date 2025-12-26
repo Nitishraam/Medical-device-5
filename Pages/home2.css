@@ -310,7 +310,7 @@ nav {
 }
 /* FIXED PRODUCTS GRID - PERFECT ALIGNMENT */
 .products-section {
-    padding: 120px 0;
+    padding: 50px 0;
     background: white;
 }
 
@@ -553,7 +553,7 @@ nav {
 
 /* SERVICES SECTION */
 .services-section {
-    padding: 140px 0;
+    padding: 50px 0;
     background: linear-gradient(135deg, #f8fafc 0%, white 100%);
 }
 
@@ -690,7 +690,7 @@ nav {
 
 /* WHY CHOOSE US */
 .choose-section {
-    padding: 140px 0;
+    padding: 70px 0;
     background: white;
 }
 
@@ -805,7 +805,7 @@ nav {
 
 /* TYPES SECTION */
 .types-section {
-    padding: 140px 0;
+    padding: 70px 0;
     background: linear-gradient(135deg, #f8fafc 0%, white 100%);
 }
 
@@ -898,7 +898,7 @@ nav {
 
 /* TESTIMONIALS */
 .testimonials-section {
-    padding: 140px 0;
+    padding: 50px 0;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -969,7 +969,7 @@ nav {
 
 /* BLOG SECTION */
 .blog-section {
-    padding: 140px 0;
+    padding: 50px 0;
     background: white;
 }
 
