@@ -485,7 +485,7 @@ nav {
 
 /* QUICK SERVICES */
 .quick-services {
-    padding: 100px 0;
+    padding: 50px 0;
     background: white;
 }
 
@@ -603,7 +603,7 @@ nav {
 
 /* STATS SECTION */
 .stats-section {
-  padding: 120px 0;
+  padding: 70px 0;
   background: white;
   position: relative;
 }
@@ -688,7 +688,7 @@ nav {
 
 /* SERVICES SECTION */
 .services-section {
-  padding: 120px 0;
+  padding: 50px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -776,7 +776,7 @@ nav {
 
 /* BENEFITS SECTION */
 .benefits-section {
-  padding: 120px 0;
+  padding: 50px 0;
   background: white;
 }
 
@@ -839,7 +839,7 @@ nav {
 
 /* ISSUES SECTION */
 .issues-section {
-  padding: 120px 0;
+  padding: 50px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -912,7 +912,7 @@ nav {
 
 /* BLOG SECTION */
 .blog-section {
-  padding: 120px 0;
+  padding: 50px 0;
   background: white;
 }
 
@@ -1079,7 +1079,7 @@ nav {
 
 /* PARTNERS SECTION */
 .partners-section {
-    padding: 120px 0;
+    padding: 50px 0;
     background: linear-gradient(135deg, white 0%, #f8fafc 100%);
 }
 
