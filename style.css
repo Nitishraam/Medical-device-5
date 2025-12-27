@@ -25,154 +25,145 @@ html {
    YOUR ORIGINAL NAVIGATION (100% UNCHANGED)
 ======================================== */
 nav {
-  width: 100%;
-  padding: 15px;
-  background-color: white;
-  z-index: 5;
-  position: fixed;
-  text-transform: uppercase;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    text-transform: uppercase;
 }
 
 .mb {
-  display: none;
-  position: fixed;
-  top: 0;
-  z-index: 12;
-  text-transform: uppercase;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    text-transform: uppercase;
 }
 
 .mb-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  background-color: white;
-  gap: 30px;
-  padding: 7px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: white;
+    gap: 30px;
+    padding: 7px;
 }
 
 .mb-logo {
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
 }
 
 .mb-logo img {
-  height: 40px;
+    height: 40px;
 }
 
 .mb-logo a {
-  text-decoration: none;
-  display: flex;
+    text-decoration: none;
+    display: flex;
 }
 
 .login2 {
-  border: 1px solid black;
-  padding: 7px;
-  color: #3bb105;
-  border-radius: 5px;
+    border: 1px solid black;
+    padding: 7px;
+    color: #3bb105;
+    border-radius: 5px;
 }
 
 .login2:hover {
-  background: linear-gradient(to right, #93d972, #277005);
-  color: black;
+    background: linear-gradient(to right, #93d972, #277005);
+    color: black;
 }
 
 .menu-list li a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .menu-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  position: absolute;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  min-width: 200px;
-  left: 0;
-  top: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    background-color: white;
 }
 
 .menu-btn {
-  position: relative;
-  background-color: white;
-  cursor: pointer;
+    position: relative;
+    background-color: white;
 }
 
 .main-menu {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  gap: 15px;
-  justify-content: space-evenly;
-  padding: 0 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-evenly;
 }
 
 .main-menu img {
-  width: 100%;
-  height: 50px;
+    width: 100%;
+    height: 50px;
 }
 
 .menu-child {
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  justify-content: space-evenly;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
 }
 
 .menu-list2 {
-  width: 75%;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: space-evenly;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .menu-list2 li {
-  list-style: none;
-  position: relative;
+    list-style: none;
 }
 
 .menu-list2 a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .menu-list2 a:hover {
-  color: rgb(208, 176, 13);
-  background: rgba(208, 176, 13, 0.1);
+    color: rgb(208, 176, 13);
 }
 
 .main-menu a {
-  text-decoration: none;
-  font-weight: 600;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dn {
+    border: 1px solid #403d3d;
+    padding: 7px;
+    color: c;
+    border-radius: 5px;
 }
 
 .login {
-  border: 1px solid black;
-  padding: 7px;
-  color: #3bb105;
-  border-radius: 5px;
+    border: 1px solid black;
+    padding: 7px;
+    color: #3bb105;
+    border-radius: 5px;
 }
 
 .login:hover {
-  background: linear-gradient(to right, #93d972, #277005);
-  color: white;
+    background: linear-gradient(to right, #93d972, #277005);
+    color: white;
 }
 
 /* RESPONSIVE NAV */
@@ -215,7 +206,7 @@ nav {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;  
   right: 0;
   bottom: 0;
   background: radial-gradient(circle at 20% 80%, rgba(147,217,114,0.3) 0%, transparent 50%),
@@ -229,10 +220,10 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: center;
+  align-items: start;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 10px;
   position: relative;
   z-index: 2;
 }
@@ -251,7 +242,7 @@ nav {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: 45px;
   font-weight: 800;
   color: white;
   line-height: 1.1;
@@ -356,6 +347,7 @@ nav {
   border-radius: 24px;
   box-shadow: 0 40px 80px rgba(0,0,0,0.3);
   transition: all 0.6s ease;
+  margin-top: 50px;
 }
 
 .hero-image:hover .hero-img {
